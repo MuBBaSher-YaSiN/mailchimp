@@ -3512,7 +3512,7 @@ export default function Sidebar() {
       {isMobile && mobileOpen && <div className="fixed top-0 left-0 h-full w-full bg-white bg-opacity-50 z-40" />}
 
       <div
-       
+
         className={`fixed top-[7.5%] left-0 h-[calc(100vh-7.5%)] bg-white border border-gray-200 transition-all duration-300 max-lg:z-99
           ${isMobile && mobileOpen ? "w-full" : isExpanded ? "w-[230px]" : "w-[60px]"} ${isMobile ? (mobileOpen ? "translate-x-0" : "-translate-x-full") : "translate-x-0"}`}
       >
@@ -3523,7 +3523,7 @@ export default function Sidebar() {
         )}
 
         <nav className="h-full flex flex-col">
-          <div className="flex-grow overflow-y-auto py-2">
+          <div className="flex-grow overflow-y-auto py-2 mt-20 ">
             <ul className="px-2 space-y-1">
               {menuItems.map((item) => (
                 <li key={item.id}>
