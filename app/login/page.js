@@ -21,28 +21,22 @@ export default function MailchimpLogin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-         router.push("/home");
+        router.push("/home");
         // Handle login logic here
     };
 
     return (
-        <div className="min-h-screen flex">
-            {/* Left yellow sidebar */}
-            <div className="w-2 bg-[#FFE01B] h-screen fixed left-0 top-0 bottom-0"></div>
-
-            {/* Main content */}
-            <div className="flex-1 pl-14 flex items-center justify-center">
-                {/* Top logo */}
-                <div className="absolute top-6 left-20">
-                    <svg width="36" height="36" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.2952 13.2377C27.9029 12.713 27.119 12.5261 26.5619 12.9184C26.0049 13.3107 25.818 14.0945 26.2103 14.6516L36.4772 29.1078C36.8695 29.6325 37.6533 29.8193 38.2104 29.427C38.7674 29.0347 38.9543 28.2509 38.562 27.6938L28.2952 13.2377Z" fill="#241C15" />
-                        <path d="M30.6569 15.9998C30.6569 15.1715 29.9855 14.5 29.1569 14.5C28.3283 14.5 27.6569 15.1715 27.6569 15.9998V33.2998C27.6569 34.1281 28.3283 34.7996 29.1569 34.7996C29.9855 34.7996 30.6569 34.1281 30.6569 33.2998V15.9998Z" fill="#241C15" />
-                        <path d="M23.1027 16.9559C22.5127 16.6191 21.7426 16.8669 21.4058 17.4568C21.069 18.0468 21.3168 18.8169 21.9068 19.1537L34.1565 26.2309C34.7465 26.5678 35.5166 26.3199 35.8534 25.73C36.1902 25.14 35.9424 24.3699 35.3524 24.0331L23.1027 16.9559Z" fill="#241C15" />
-                        <path d="M38.0568 0.5C42.4748 0.5 46.0568 4.08205 46.0568 8.5V33.5C46.0568 37.918 42.4748 41.5 38.0568 41.5H18.0568C13.6388 41.5 10.0568 37.918 10.0568 33.5V8.5C10.0568 4.08205 13.6388 0.5 18.0568 0.5H38.0568ZM38.0568 4.5H18.0568C15.8478 4.5 14.0568 6.29086 14.0568 8.5V33.5C14.0568 35.7091 15.8478 37.5 18.0568 37.5H38.0568C40.2658 37.5 42.0568 35.7091 42.0568 33.5V8.5C42.0568 6.29086 40.2658 4.5 38.0568 4.5Z" fill="#241C15" />
-                    </svg>
+        <div className="p-4 h-screen max-lg:border-t-8 lg:border-l-8 border-yellow-300">
+            <div className='flex justify-between '>
+                <div className="">
+                    <img
+                        src="https://www.svgrepo.com/show/362237/monkey.svg"
+                        alt="Mailchimp"
+                        className="w-10"
+                    />
                 </div>
 
-                <div className="absolute top-6 right-8 flex items-center">
+                <div className="flex items-center">
                     <div className="w-5 h-5 mr-2">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#007C89" />
@@ -56,12 +50,15 @@ export default function MailchimpLogin() {
                     </div>
                 </div>
 
+            </div>
+
+            <div className="flex items-center justify-center">
                 <div className="w-full max-w-[480px] py-8 px-4 border border-zinc-300 rounded-xl">
                     <div className="flex justify-center">
                         <img
-                            src="https://cdn-images.mailchimp.com/billboards/phpza0iJx.png"
+                            src="https://www.svgrepo.com/show/362237/monkey.svg"
                             alt="Mailchimp"
-                            className="h-10"
+                            className="w-20"
                         />
                     </div>
 

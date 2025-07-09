@@ -3379,7 +3379,7 @@ export default function Sidebar() {
   const [expandedItem, setExpandedItem] = useState(null);
 
   useEffect(() => {
-    const checkScreenSize = () => setIsMobile(window.innerWidth < 768);
+    const checkScreenSize = () => setIsMobile(window.innerWidth < 1000);
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
@@ -3424,7 +3424,7 @@ export default function Sidebar() {
       id: "sms",
       icon: <FiMessageSquare size={20} />,
       label: "SMS",
-      path: "/sms",
+      path: "#",
       badge: { text: "New", color: "pink" },
       hasSubmenu: false,
       submenu: [],
@@ -3446,11 +3446,11 @@ export default function Sidebar() {
       hasSubmenu: true,
       submenu: [
         { label: "Audience Dashboard", path: "#audience-dashboard" },
-        { label: "Tags", path: "#tags" },
-        { label: "Segments", path: "#segments" },
-        { label: "Surveys", path: "#surveys" },
-        { label: "Subscriber Preferences", path: "#subscriber-preferences" },
-        { label: "Inbox", path: "#inbox" },
+        { label: "Tags", path: "#" },
+        { label: "Segments", path: "#" },
+        { label: "Surveys", path: "#" },
+        { label: "Subscriber Preferences", path: "#" },
+        { label: "Inbox", path: "#" },
       ],
     },
     {
@@ -3460,8 +3460,8 @@ export default function Sidebar() {
       path: "/analytics",
       hasSubmenu: true,
       submenu: [
-        { label: "Reports", path: "#reports" },
-        { label: "Custom Reports", path: "#custom-reports" },
+        { label: "Reports", path: "#" },
+        { label: "Custom Reports", path: "" },
       ],
     },
     {
@@ -3471,8 +3471,8 @@ export default function Sidebar() {
       path: "/website",
       hasSubmenu: true,
       submenu: [
-        { label: "Settings", path: "#website-settings" },
-        { label: "Reports", path: "#website-reports" },
+        { label: "Settings", path: "#" },
+        { label: "Reports", path: "#" },
       ],
     },
     {
@@ -3482,9 +3482,9 @@ export default function Sidebar() {
       path: "/content",
       hasSubmenu: true,
       submenu: [
-        { label: "Creative Assistant", path: "#creative-assistant" },
-        { label: "Email templates", path: "#email-templates" },
-        { label: "Brand Kit", path: "#brand-kit" },
+        { label: "Creative Assistant", path: "#" },
+        { label: "Email templates", path: "#" },
+        { label: "Brand Kit", path: "#" },
       ],
     },
     {
@@ -3493,7 +3493,7 @@ export default function Sidebar() {
       label: "Integrations",
       path: "/integrations",
       hasSubmenu: true,
-      submenu: [{ label: "Manage", path: "#manage-integrations" }],
+      submenu: [{ label: "Manage", path: "#" }],
     },
   ];
 
@@ -3504,16 +3504,16 @@ export default function Sidebar() {
   return (
     <>
       {isMobile && !mobileOpen && (
-        <button id="hamburger-button" onClick={() => setMobileOpen(true)} className="fixed z-50 bottom-6 left-6 bg-black text-white rounded-full p-3 shadow-lg">
+        <button id="hamburger-button" onClick={() => setMobileOpen(true)} className="fixed z-50 bottom-6 left-6 bg-black text-black border-4 rounded-full p-3 shadow-lg">
           <GiHamburgerMenu size={20} />
         </button>
       )}
 
-      {isMobile && mobileOpen && <div className="fixed top-0 left-0 h-full w-full bg-black bg-opacity-50 z-40" />}
+      {isMobile && mobileOpen && <div className="fixed top-0 left-0 h-full w-full bg-white bg-opacity-50 z-40" />}
 
       <div
-        id="sidebar-container"
-        className={`fixed top-[106px] left-0 h-[calc(100vh-106px)] bg-white z-50 border border-gray-200 transition-all duration-300
+       
+        className={`fixed top-[7.5%] left-0 h-[calc(100vh-7.5%)] bg-white border border-gray-200 transition-all duration-300 max-lg:z-99
           ${isMobile && mobileOpen ? "w-full" : isExpanded ? "w-[230px]" : "w-[60px]"} ${isMobile ? (mobileOpen ? "translate-x-0" : "-translate-x-full") : "translate-x-0"}`}
       >
         {isMobile && mobileOpen && (

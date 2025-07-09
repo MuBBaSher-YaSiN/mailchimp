@@ -110,7 +110,7 @@ export default function CampaignPage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Header */}
-            <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+            <div className="px-6 sticky top-5 z-1 bg-white py-4 border-b border-gray-200 flex justify-between items-center">
                 <h1 className="text-[22px] font-medium text-[#241c15]">All campaigns</h1>
                 <div className="flex items-center gap-3">
                     <button className="px-4 py-2 text-sm text-[#007c89] border border-[#007c89] rounded hover:bg-[#f0fafb] transition-colors">
@@ -123,7 +123,7 @@ export default function CampaignPage() {
             </div>
 
             {/* Tabs */}
-            <div className="border-b border-gray-200">
+            <div className="border-b mt-10 border-gray-200">
                 <div className="px-6">
                     <div className="flex">
                         <button

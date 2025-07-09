@@ -453,6 +453,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Header from './Header';
 
 export default function AudiencePage() {
     const [selectedRows, setSelectedRows] = useState([]);
@@ -549,7 +550,7 @@ export default function AudiencePage() {
 
     return (
         <div className="bg-white p-6">
-            {/* Filter bar */}
+            <Header/>
             <div className="flex flex-wrap items-center gap-3 mb-6">
                 {/* Segments dropdown */}
                 <div className="relative">
