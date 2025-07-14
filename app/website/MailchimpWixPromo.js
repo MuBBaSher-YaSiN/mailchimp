@@ -165,13 +165,7 @@ export default function MailchimpWixPromo() {
                     {/* Logo */}
                     <div className="mb-8">
                         <div className="h-8">
-                            <Image
-                                src="/images/mailchimp-wix-logos.png"
-                                alt="Intuit mailchimp | WIX"
-                                width={300}
-                                height={30}
-                                className="h-full w-auto object-contain object-left"
-                            />
+                              <img src="https://www.svgrepo.com/show/362237/monkey.svg" width={50} height={16} />
                         </div>
                     </div>
 

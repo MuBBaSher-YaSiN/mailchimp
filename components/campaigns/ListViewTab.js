@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function ListViewTab() {
   const [searchTerm, setSearchTerm] = useState('');
-  
+
   return (
     <div>
       {/* Search bar */}
@@ -32,7 +32,7 @@ export default function ListViewTab() {
           <div className="flex items-center gap-2">
             <span className="text-sm text-[#4a4a4a]">Type:</span>
             <div className="relative">
-              <select className="appearance-none pr-8 pl-3 py-1 border border-gray-300 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none text-[#267c89] pr-8 pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -42,11 +42,11 @@ export default function ListViewTab() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-2">
             <span className="text-sm text-[#4a4a4a]">Status:</span>
             <div className="relative">
-              <select className="appearance-none pr-8 pl-3 py-1 border border-gray-300 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none pr-8 text-[#267c89] pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -56,11 +56,11 @@ export default function ListViewTab() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-2">
             <span className="text-sm text-[#4a4a4a]">Folder:</span>
             <div className="relative">
-              <select className="appearance-none pr-8 pl-3 py-1 border border-gray-300 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none pr-8 text-[#267c89] pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -70,11 +70,11 @@ export default function ListViewTab() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-2">
             <span className="text-sm text-[#4a4a4a]">Date:</span>
             <div className="relative">
-              <select className="appearance-none pr-8 pl-3 py-1 border border-gray-300 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none text-[#267c89] pr-8 pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -84,10 +84,10 @@ export default function ListViewTab() {
               </div>
             </div>
           </div>
-          
+
           <button className="text-sm text-[#007c89]">Clear</button>
         </div>
-        
+
         <div className="flex items-center gap-2">
           <span className="text-sm text-[#4a4a4a]">Sort by:</span>
           <div className="relative">
@@ -102,7 +102,7 @@ export default function ListViewTab() {
           </div>
           <button className="p-1">
             <svg className="w-5 h-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h5a1 1 0 000-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM13 16a1 1 0 102 0v-5.586l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 101.414 1.414L13 10.414V16z"/>
+              <path d="M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h5a1 1 0 000-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM13 16a1 1 0 102 0v-5.586l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 101.414 1.414L13 10.414V16z" />
             </svg>
           </button>
         </div>
@@ -116,11 +116,11 @@ export default function ListViewTab() {
               <th className="w-10 py-3 pr-3 text-left">
                 <input type="checkbox" className="h-4 w-4 text-[#007c89] rounded border-gray-300 focus:ring-[#007c89]" />
               </th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700">Name</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700">Status</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700">Audience</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700">Analytics</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700">Actions</th>
+              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Name</th>
+              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Status</th>
+              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Audience</th>
+              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Analytics</th>
+              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -130,7 +130,7 @@ export default function ListViewTab() {
               </td>
               <td className="py-4 px-3">
                 <div className="mb-1">
-                  <a href="#" className="font-medium text-[#007c89] hover:underline">Health Insurance</a>
+                  <a href="#" className="font-medium text-[#007c89] font-semibold hover:underline">Health Insurance</a>
                 </div>
                 <div className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -144,12 +144,12 @@ export default function ListViewTab() {
                 </div>
               </td>
               <td className="py-4 px-3">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-gray-100 text-gray-800">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-[#e2e9ed] text-gray-800">
                   Draft
                 </span>
               </td>
               <td className="py-4 px-3">
-                <a href="#" className="text-[#007c89] hover:underline">ORACLESOL</a>
+                <a href="#" className="text-[#007c89] border-b-3 border-dotted text-xs">ORACLESOL</a>
               </td>
               <td className="py-4 px-3">
                 {/* Empty Analytics column */}
@@ -172,7 +172,7 @@ export default function ListViewTab() {
       </div>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between mt-6">
+      {/* <div className="flex items-center justify-between mt-6">
         <div className="text-sm text-gray-700">
           Showing results 1 - 1 of 1
         </div>
@@ -199,7 +199,51 @@ export default function ListViewTab() {
             </button>
           </div>
         </div>
+      </div> */}
+
+
+      <div className="flex items-center justify-end gap-3 mt-5">
+        <div className="">
+          Showing results 1 - 1 of 1
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <button className="px-2 py-1  rounded-l text-gray-400 disabled:opacity-50">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6 1.41-1.41zM6 6h2v12H6V6z" />
+            </svg>
+          </button>
+
+          <button className="px-2 py-1  text-gray-400 disabled:opacity-50">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+
+          <span className="text-sm">Page</span>
+
+          <input
+            type="text"
+            value="1"
+            className="w-12 py-1 px-2 text-center border border-gray-200 p-6 rounded text-sm bg-[#d5dee3]"
+          />
+
+          <span className="text-sm">of 1</span>
+
+          <button className="px-2 py-1  text-gray-400 disabled:opacity-50">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+
+          <button className="px-2 py-1  rounded-r text-gray-400 disabled:opacity-50">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6-1.41 1.41zM16 6h2v12h-2V6z" />
+            </svg>
+          </button>
+        </div>
       </div>
+
     </div>
   );
 }

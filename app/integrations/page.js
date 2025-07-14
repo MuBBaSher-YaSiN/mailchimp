@@ -4,10 +4,12 @@ import FilterPanel from './FilterPanel'
 
 import IntegrationCards from './IntegrationCards'
 import WixIntegration from './WixIntegration'
+import Header from './Header'
 
 function page() {
   return (
     <div className='w-full'>
+      <Header/>
       <div className='max-w-6xl mx-auto lg:flex'>
         <div>
           <FilterPanel />

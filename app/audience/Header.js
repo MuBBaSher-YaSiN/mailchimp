@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="w-full sticky top-5 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
       {/* Left side - Home title */}
-      <h1 className="text-3xl font-medium text-[#212529]">Automations flows</h1>
+      <h1 className="text-3xl font-medium text-[#212529]">Contacts</h1>
       
       {/* Right side - Actions */}
       <div className="flex items-center gap-3">
@@ -17,7 +17,7 @@ export default function Header() {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <span>Quick actions</span>
+            <span>More options</span>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="16" 
@@ -50,7 +50,7 @@ export default function Header() {
         <button 
           className="px-4 py-2 bg-[#007c89] hover:bg-[#005d68] text-white rounded-md text-sm font-medium transition-colors"
         >
-          Choose flow tempelate
+          Add contacts
         </button>
       </div>
     </header>

@@ -4,7 +4,7 @@ import FileManager from './FileManager'
 
 function page() {
   return (
-    <div>
+    <div className='mt-10'>
         {/* <CustomCheckboxTable/> */}
         <FileManager/>
     </div>

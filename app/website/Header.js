@@ -4,15 +4,15 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="w-full sticky top-5 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
+    <header className="w-full sticky top-7 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
       {/* Left side - Home title */}
-      <h1 className="text-[24px] font-semibold text-[#212529]">Home</h1>
+      <h1 className="text-[24px] font-semibold text-[#212529]">Website</h1>
       
       {/* Right side - Actions */}
       <div className="flex items-center gap-3">
         {/* Quick Actions Dropdown */}
         <div className="relative">
-          <button 
+          {/* <button 
             className="px-4 py-2 border border-[#d9d9d9] rounded-md bg-white text-[#333] hover:bg-gray-50 flex items-center gap-2 text-sm font-medium transition-colors"
             aria-haspopup="true"
             aria-expanded="false"
@@ -32,7 +32,7 @@ export default function Header() {
             >
               <path d="M4 6l4 4 4-4" />
             </svg>
-          </button>
+          </button> */}
           
           {/* Dropdown Menu (hidden by default) */}
           {/* Uncomment to show dropdown
@@ -47,11 +47,11 @@ export default function Header() {
         </div>
 
         {/* Create Email Button */}
-        <button 
+        {/* <button 
           className="px-4 py-2 bg-[#007c89] hover:bg-[#005d68] text-white rounded-md text-sm font-medium transition-colors"
         >
           Create Email
-        </button>
+        </button> */}
       </div>
     </header>
   );

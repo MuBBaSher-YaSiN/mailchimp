@@ -76,7 +76,7 @@ const OnboardingCarousel = () => {
     <div className="max-w-6xl mx-auto p-4 py-8 sm:p-6 min-h-[300px] mt-4">
       <div className='flex'>
         <div className="mb-6 sm:mb-8 flex flex-col justify-center rounded-lg mr-4">
-          <h2 className="text-xl sm:text-2xl font-medium mb-2">Finish setting up your account</h2>
+          <h2 className="text-[20px] font-medium mb-2">Finish setting up your account</h2>
           <div className="flex items-center">
             <span className="mr-2 text-sm">0%</span>
             <div className="w-[90%] mx-auto h-2 bg-[#d9e6f2] rounded-full"></div>
@@ -93,7 +93,7 @@ const OnboardingCarousel = () => {
             {tasks[currentSlide].map((task, index) => (
               <div
                 key={index}
-                className="w-[330px] min-w-[330px] h-[200px] border border-[#d9e6f2] rounded-lg p-2 bg-white shadow-sm"
+                className="w-[330px] min-w-[330px] h-[200px] border border-[#d9e6f2] rounded-lg p-4 bg-white shadow-sm"
               >
                 <div className="flex justify-between items-center">
                   <div className="w-5 h-5 rounded-full border-2 border-[#d9e6f2]"></div>
@@ -112,8 +112,8 @@ const OnboardingCarousel = () => {
                     ))}
                   </div>
                 </div>
-                <h3 className="text-base sm:text-lg font-medium text-[#00aa8a]">{task.title}</h3>
-                <p className="text-sm text-[#666666]">{task.description}</p>
+                <h3 className="text-[15px] font-medium text-[#277e89] mt-3">{task.title}</h3>
+                <p className="text-sm text-gray-600 my-4">{task.description}</p>
                 <p className="text-xs text-[#999999]">{task.time}</p>
               </div>
             ))}

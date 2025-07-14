@@ -3,7 +3,14 @@
 
 import { useState } from 'react';
 import CampaignPage from '../../components/campaigns/CampaignPage';
+import Header from './Header';
 
 export default function CampaignsPage() {
-  return <CampaignPage />;
+  return (
+    <div>
+      <Header/>
+      <CampaignPage />
+    </div>
+
+  );
 }

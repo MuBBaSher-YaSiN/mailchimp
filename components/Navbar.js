@@ -471,11 +471,11 @@ function Navbar() {
 
                 {/* Search Bar */}
                 <div
-                    className="w-full hidden md:flex max-w-xl rounded-lg border border-zinc-300 items-center h-8 mt-1 px-2 focus-within:border-yellow-400 focus-within:border-2 ml-4 transition cursor-pointer"
+                    className="w-full hidden md:flex max-w-xl rounded-lg border border-zinc-300 items-center h-8 mt-1 py-4 px-2 focus-within:border-yellow-400 focus-within:border-2 ml-4 transition cursor-pointer"
                     onClick={() => setSearchActive(true)}
                 >
-                    <IoMdSearch size={20} className="text-zinc-500 mr-2" />
-                    <div className="text-[#757575] text-sm flex-1">Search...</div>
+                    <IoMdSearch size={25} className="text-[#2b3034] mr-2" />
+                    <div className="text-[#2b3034] flex-1">Search...</div>
                 </div>
 
                 {/* Right buttons - With user dropdown functionality */}
@@ -487,26 +487,28 @@ function Navbar() {
                         <IoMdSearch size={22} className='text-gray-500' />
                     </button>
 
-                    <button className='border border-gray-200 px-2 py-1 md:hidden rounded-lg'>
-                        <span className='inline-block w-2 h-2 bg-green-300 rounded-full mr-1'></span>
-                        Live expert help
-                    </button>
+                    {/* <button className='border border-gray-200 px-2 py-1 md:hidden rounded-lg'>
+                        <span >fjghdf</span>
+                      
+                    </button> */}
 
                     <button
                         className='border hidden md:block border-gray-200 px-2 py-1 rounded-lg'
                         onClick={toggleHelpSidebar}
                     >
-                        <span className='bg-green-300 rounded-full mr-1'></span>
+                        {/* <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span> */}
+                        {/* <span className='bg-green-300 rounded-full mr-1'></span> */}
                         Live expert help
                     </button>
 
                     <div className="relative">
+                        
                         <button 
-                            className='bg-yellow-300 h-10 w-10 flex items-center justify-center rounded-full text-sm font-medium'
+                            className='h-12 w-12 flex border- items-center justify-center overflow-hidden rounded-full text-sm font-medium'
                             onClick={() => setShowUserDropdown(true)}
                         >
-                            S
-                        </button>
+                            
+                            <img src='https://secure.gravatar.com/avatar/d42750a7764148ea9a23aa049e8e2efa.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fm-avatar.png'/>                        </button>
                         
                         {/* User dropdown menu */}
                         {showUserDropdown && (

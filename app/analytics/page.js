@@ -1,15 +1,15 @@
 import React from 'react'
 import EmailAnalyticsDashboard from './EmailAnalyticsDashboard'
-import ConversionsDashboard from './ConversionsDashboard'
-import DeliveryAnalytics from './DeliveryAnalytics'
+import DateFilterComponent from './DateFilterComponent'
+import Header from './Header'
 
 function page() {
   return (
     <div>
-        <EmailAnalyticsDashboard/>
-        <ConversionsDashboard/>
-        <DeliveryAnalytics/>
-        {/* <EmailAnalyticsDashboard2/> */}
+      <Header/>
+      <DateFilterComponent/>
+      <EmailAnalyticsDashboard />
+   
     </div>
   )
 }

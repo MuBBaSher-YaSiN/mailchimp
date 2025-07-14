@@ -8,9 +8,12 @@ function page() {
   return (
     <div>
       <Header />
-      <SignUpFormHero />
-      <PopupPerformanceDashboard />
-      <ConnectSiteSection />
+      <div className=''>
+        <SignUpFormHero />
+        <PopupPerformanceDashboard />
+        <ConnectSiteSection />
+      </div>
+
     </div>
   )
 }
