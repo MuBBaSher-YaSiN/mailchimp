@@ -488,7 +488,7 @@ export default function WebsiteCreationOptions() {
   ];
 
   return (
-    <div className="max-w-[1200px] mx-auto px-5 py-6 md:px-8 md:py-12">
+    <div className="max-w-[1248px] mx-auto px-5 py-2 md:px-8 md:py-12">
       
       {/* Legal text */}
       <div className="text-[13px] leading-5 text-[#4a4a4a] mb-10">
@@ -506,7 +506,7 @@ export default function WebsiteCreationOptions() {
       </div>
 
       {/* Main heading */}
-      <h2 className="text-[28px] md:text-[32px] font-medium text-[#241c15] mb-8">
+      <h2 className="heading_text">
         Create a website with Mailchimp
       </h2>
 
@@ -514,14 +514,14 @@ export default function WebsiteCreationOptions() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card, index) => (
           <div key={index} className="bg-white border border-[#e6e6e6] rounded-lg overflow-hidden flex flex-col">
-            <div className="p-6 flex-grow">
-              <h3 className="text-[22px] md:text-[24px] font-medium text-[#241c15] mb-3">
+            <div className="p-6 flex-grow flex flex-col items-center">
+              <h3 className="heading_text">
                 {card.title}
               </h3>
-              <p className="text-[15px] text-[#4a4a4a] mb-6">
+              <p className="text-[15px] text-center text-[#21262A] mb-6">
                 {card.description}
               </p>
-              <button className="bg-[#f2f2f2] hover:bg-[#e5e5e5] text-[#241c15] px-4 py-2 rounded text-[14px] font-medium transition-colors">
+              <button className="bg-[#f2f2f2] hover:bg-[#e5e5e5] text-[#21262A] px-4 py-2 rounded text-[14px] font-medium transition-colors">
                 {card.buttonText}
               </button>
             </div>

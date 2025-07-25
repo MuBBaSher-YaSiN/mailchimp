@@ -150,8 +150,8 @@ export default function AudiencePage() {
 
             {/* Stats row */}
             <div className="flex justify-between items-center mb-6">
-                <div className="text-[14px] text-[#333]">
-                    <span className="text-[#007c89] font-medium">4</span> total contacts. <span className="text-[#007c89] font-medium">4</span> email subscribers.
+                <div className="text-[14px] mt-2 text-[#333]">
+                    <span className="text-[#007c89] font-semibold">4</span> total contacts. <span className="text-[#007c89] font-medium">4</span> email subscribers.
                 </div>
 
                 <a href="#" className="text-[#007c89] hover:underline text-[14px]">See audience analytics</a>
@@ -277,7 +277,7 @@ export default function AudiencePage() {
                                             className="h-4 w-4 text-[#007c89] border-[#ccc] rounded"
                                         />
                                     </td>
-                                    <td className="p-3 py-6 sticky-email">
+                                    <td className="p-3 sticky-email">
                                         <a href="#" className="text-[#007c89] hover:underline">{contact.email}</a>
                                     </td>
                                     <td className="p-3">

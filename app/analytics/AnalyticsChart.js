@@ -148,11 +148,11 @@ const AnalyticsChart = () => {
                 {/* Metric display */}
                 <div>
                     <div className="flex items-center">
-                        <span className="text-[17px] text-black border-b-2 border-dashed border-[#6b6b6b]">Clicked</span>
+                        <span className="text-[16px] text-[#21262A] border-b-2 border-dashed border-[#6b6b6b]">Clicked</span>
                     </div>
                    
                     <div className="flex items-center gap-2 mt-1">
-                        <span className="text-3xl font-semibold">0</span>
+                        <span className="heading_text">0</span>
                         <span className="text-[16px] font-bold text-black text-center h-8 w-8 rounded-full bg-gray-100">--</span>
                     </div>
                 </div>

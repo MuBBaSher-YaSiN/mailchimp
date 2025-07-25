@@ -4,7 +4,7 @@ import React from 'react';
 import { GiSevenPointedStar } from "react-icons/gi";
 export default function RecommendedAutomations() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8">
+    <div className="max-w-[1248px] mx-auto px-6 py-8">
       <h2 className="text-[28px] font-medium text-[#241c15] mb-4">
         Try these recommended flows
       </h2>
@@ -30,10 +30,10 @@ export default function RecommendedAutomations() {
             </div>
           </div>
           
-          <h3 className="text-lg font-medium text-[#241c15]">
+          <h3 className="text-[16px] font-medium text-[#21252A]">
             Welcome new contacts
           </h3>
-          <p className="text-[14px] text-[#4a4a4a]">
+          <p className="text-[14px] text-[#21252A]">
             Increase engagement from new subscribers with a personalized hello.
           </p>
         </div>
@@ -61,10 +61,10 @@ export default function RecommendedAutomations() {
             </div>
           </div>
           
-          <h3 className="text-lg font-medium text-[#241c15]">
+          <h3 className="text-[16px] font-medium text-[#21262A]">
             Share exclusive content with new leads
           </h3>
-          <p className="text-[14px] text-[#4a4a4a]">
+          <p className="text-[14px] text-[#21262A]">
             Welcome new contacts acquired through Meta lead ads. Once a lead is approved, automatically engage them with members-only content via email.
           </p>
         </div>
@@ -80,10 +80,10 @@ export default function RecommendedAutomations() {
             </div>
           </div>
           
-          <h3 className="text-lg font-medium text-[#241c15]">
+          <h3 className="text-[16px] font-medium text-[#21262A]">
             Celebrate sign-up anniversaries with your contacts
           </h3>
-          <p className="text-[14px] text-[#4a4a4a]">
+          <p className="text-[14px] text-[#21262A]">
             Offer promotions or well wishes that help contacts feel closer to your brand.
           </p>
         </div>

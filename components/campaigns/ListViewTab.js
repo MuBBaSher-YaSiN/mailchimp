@@ -30,7 +30,7 @@ export default function ListViewTab() {
       <div className="flex flex-wrap items-center justify-between mb-6 gap-3">
         <div className="flex items-center gap-4 flex-wrap">
           <div className="flex items-center gap-2">
-            <span className="text-sm text-[#4a4a4a]">Type:</span>
+            <span className="text-sm text-[#4C555B]">Type:</span>
             <div className="relative">
               <select className="appearance-none text-[#267c89] pr-8 pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
@@ -44,7 +44,7 @@ export default function ListViewTab() {
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-sm text-[#4a4a4a]">Status:</span>
+            <span className="text-sm text-[#4C555B]">Status:</span>
             <div className="relative">
               <select className="appearance-none pr-8 text-[#267c89] pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
@@ -58,7 +58,7 @@ export default function ListViewTab() {
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-sm text-[#4a4a4a]">Folder:</span>
+            <span className="text-sm text-[#4C555B]">Folder:</span>
             <div className="relative">
               <select className="appearance-none pr-8 text-[#267c89] pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
@@ -72,7 +72,7 @@ export default function ListViewTab() {
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-sm text-[#4a4a4a]">Date:</span>
+            <span className="text-sm text-[#4C555B]">Date:</span>
             <div className="relative">
               <select className="appearance-none text-[#267c89] pr-8 pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
@@ -89,7 +89,7 @@ export default function ListViewTab() {
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="text-sm text-[#4a4a4a]">Sort by:</span>
+          <span className="text-sm text-[#4C555B]">Sort by:</span>
           <div className="relative">
             <select className="appearance-none pr-8 pl-3 py-1 border border-gray-300 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
               <option>Date edited</option>
@@ -116,11 +116,11 @@ export default function ListViewTab() {
               <th className="w-10 py-3 pr-3 text-left">
                 <input type="checkbox" className="h-4 w-4 text-[#007c89] rounded border-gray-300 focus:ring-[#007c89]" />
               </th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Name</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Status</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Audience</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Analytics</th>
-              <th className="py-3 px-3 text-left font-medium text-gray-700 text-sm">Actions</th>
+              <th className="py-3 px-3 text-left font-medium text-[#4C555B] text-sm">Name</th>
+              <th className="py-3 px-3 text-left font-medium text-[#4C555B] text-sm">Status</th>
+              <th className="py-3 px-3 text-left font-medium text-[#4C555B] text-sm">Audience</th>
+              <th className="py-3 px-3 text-left font-medium text-[#4C555B] text-sm">Analytics</th>
+              <th className="py-3 px-3 text-left font-medium text-[#4C555B] text-sm">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -139,7 +139,7 @@ export default function ListViewTab() {
                   </svg>
                   Regular email
                 </div>
-                <div className="text-xs text-gray-500 mt-1">
+                <div className="text-[14px] font-[400] text-[#4C555B] mt-1">
                   Last edited Sat, Jun 28, 02:14 PM by Marketing OS
                 </div>
               </td>
@@ -149,7 +149,7 @@ export default function ListViewTab() {
                 </span>
               </td>
               <td className="py-4 px-3">
-                <a href="#" className="text-[#007c89] border-b-3 border-dotted text-xs">ORACLESOL</a>
+                <a href="#" className="text-[#007c89] border-b-2 border-dashed text-xs">ORACLESOL</a>
               </td>
               <td className="py-4 px-3">
                 {/* Empty Analytics column */}

@@ -2,23 +2,19 @@ import React from "react";
 
 export default function MailchimpDashboard() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen border-l-10 border-[#fbe01b]">
       {/* Left Sidebar */}
-      <aside className="w-64 bg-gray-50 border-r border-gray-200 flex-shrink-0">
+      <aside className="w-[366px]  bg-gray-50 border-r border-gray-200 flex-shrink-0">
         {/* Logo */}
         <div className="p-6">
-          <img
-            src="https://cdn-images.mailchimp.com/logo/mc-freddie-dark.svg"
-            alt="Mailchimp"
-            className="w-10 h-10"
-          />
+          <img src="https://www.svgrepo.com/show/362237/monkey.svg" width={50} height={16} />
         </div>
 
         {/* Navigation Menu */}
-        <nav className="mt-2">
-          <ul>
+        <nav className="mt-2 ">
+          <ul className="px-4">
             <li className="relative">
-              <a href="#" className="flex items-center justify-between px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100">
+              <a href="#" className="flex items-center justify-between px-6 py-3 text-[20px] font-medium text-[#21262A] hover:bg-gray-100">
                 Email
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -26,26 +22,26 @@ export default function MailchimpDashboard() {
               </a>
             </li>
             <li>
-              <a href="#" className="block px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100">
+              <a href="#" className="block px-6 py-3 text-[20px] font-medium text-[#21262A] hover:bg-gray-100">
                 Automations
               </a>
             </li>
             <li>
-              <a href="#" className="block px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100">
+              <a href="#" className="block px-6 py-3 text-[20px] font-medium text-[#21262A] hover:bg-gray-100">
                 Website
               </a>
             </li>
             <li>
-              <a href="#" className="block px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100">
+              <a href="#" className="block px-6 py-3 text-[20px] font-medium text-[#21262A] hover:bg-gray-100">
                 Landing Page
               </a>
             </li>
             <li>
-              <a href="#" className="block px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100">
+              <a href="#" className="block px-6 py-3 text-[20px] font-medium text-[#21262A] hover:bg-gray-100">
                 Creative Assistant
               </a>
             </li>
-            <li className="relative">
+            <li className="relative border-t-2 border-zinc-200">
               <a href="#" className="flex items-center justify-between px-6 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100">
                 Signup Form
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

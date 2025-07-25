@@ -26,10 +26,10 @@ const DropOff = () => (
 const MetricItem = ({ title, value }) => (
   <div>
     <div>
-      <span className="text-[17px] text-black border-b-2 border-dashed border-[#6b6b6b]">{title}</span>
+      <span className="text-[16px] text-[#21262A] border-b-2 border-dashed border-[#6b6b6b]">{title}</span>
     </div>
     <div className="mt-2">
-      <span className="text-[28px] font-medium text-[#241c15]">{value}</span>
+      <span className="text-[24px] font-medium text-[#21262A]">{value}</span>
     </div>
   </div>
 );
@@ -52,10 +52,10 @@ const ConversionFunnel = () => {
       {/* Click rate metric */}
       <div className="mt-8">
         <div>
-          <span className="text-[17px] text-black border-b-2 border-dashed border-[#6b6b6b]">Click rate</span>
+          <span className="text-[16px] text-black border-b-2 border-dashed border-[#6b6b6b]">Click rate</span>
         </div>
         <div className="mt-2 flex items-baseline">
-          <span className="text-[24px] font-medium text-[#241c15]">0%</span>
+          <span className="text-[24px] font-medium text-[#21262A]">0%</span>
           <span className="text-[16px] text-[#6b6b6b] bg-[#f0f4f6] ml-3 w-8 h-8 p-[3px] rounded-full font-bold text-center">--</span>
         </div>
       </div>

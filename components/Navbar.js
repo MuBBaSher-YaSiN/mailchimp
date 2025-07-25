@@ -410,7 +410,6 @@ import { FaInfoCircle } from "react-icons/fa";
 
 function Navbar() {
     const [searchActive, setSearchActive] = useState(false);
-    const [bannerVisible, setBannerVisible] = useState(true);
     const [showUserDropdown, setShowUserDropdown] = useState(false);
     const searchRef = useRef(null);
     const inputRef = useRef(null);
@@ -448,22 +447,11 @@ function Navbar() {
 
     return (
         <>
-            {/* Security banner */}
-            {bannerVisible && (
-                <div className="w-full bg-[#241c15] text-white py-2 px-4 flex items-center justify-between text-sm fixed top-0 left-0 z-50">
-                    <div className="flex items-center">
-                        <FaInfoCircle className="mr-2 text-white" />
-                        <span>Reminder: Intuit Mailchimp will never call, email, or text you for your password or 1-time passcode.</span>
-                    </div>
-                    <div className="flex items-center">
-                        <button className="text-white hover:underline text-sm mr-4">Learn more about security</button>
-                        <button className="text-white" onClick={() => setBannerVisible(false)}>✕</button>
-                    </div>
-                </div>
-            )}
+
+
 
             {/* Main Navbar - Now fixed position */}
-            <div className='w-full border-t-5 border-b border-b-zinc-300 border-t-yellow-300 flex justify-between p-2 fixed left-0 z-40 bg-white' style={{ top: bannerVisible ? '41px' : '0' }}>
+            <div className='w-full border-t-5 border-b border-b-zinc-300 border-t-yellow-300 flex justify-between p-2 sticky left-0 z-40 bg-white'>
                 {/* Logo - Unchanged */}
                 <div>
                     <img src="https://www.svgrepo.com/show/362237/monkey.svg" width={50} height={16} />
@@ -471,48 +459,38 @@ function Navbar() {
 
                 {/* Search Bar */}
                 <div
-                    className="w-full hidden md:flex max-w-xl rounded-lg border border-zinc-300 items-center h-8 mt-1 py-4 px-2 focus-within:border-yellow-400 focus-within:border-2 ml-4 transition cursor-pointer"
+                    className="hidden  md:flex w-[636px] border rounded-md border-zinc-300 items-center hover:border-black h-9 mt-1 py-4 px-2 focus-within:border-yellow-400 focus-within:border-2 ml-4 transition cursor-pointer"
                     onClick={() => setSearchActive(true)}
                 >
-                    <IoMdSearch size={25} className="text-[#2b3034] mr-2" />
-                    <div className="text-[#2b3034] flex-1">Search...</div>
+                    <IoMdSearch size={22} className="text-[#21262A] mr-2" />
+                    <div className="text-[#21262A] text-[14px]">Search...</div>
                 </div>
 
-                {/* Right buttons - With user dropdown functionality */}
-                <div className='flex justify-evenly items-center w-full md:max-w-[250px] max-w-[300px]'>
+
+                <div className='flex'>
                     <button
                         className='md:hidden'
                         onClick={() => setSearchActive(true)}
                     >
                         <IoMdSearch size={22} className='text-gray-500' />
                     </button>
-
-                    {/* <button className='border border-gray-200 px-2 py-1 md:hidden rounded-lg'>
-                        <span >fjghdf</span>
-                      
-                    </button> */}
-
-                    <button
-                        className='border hidden md:block border-gray-200 px-2 py-1 rounded-lg'
-                        onClick={toggleHelpSidebar}
-                    >
-                        {/* <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span> */}
-                        {/* <span className='bg-green-300 rounded-full mr-1'></span> */}
-                        Live expert help
-                    </button>
-
-                    <div className="relative">
-                        
-                        <button 
+                    <div className="relative flex items-center gap-4">
+                        <button
+                            className='normal_text border hidden md:block border-gray-200 px-4 h-[30px] rounded'
+                            onClick={toggleHelpSidebar}
+                        >
+                            Live expert Help
+                        </button>
+                        <button
                             className='h-12 w-12 flex border- items-center justify-center overflow-hidden rounded-full text-sm font-medium'
                             onClick={() => setShowUserDropdown(true)}
                         >
-                            
-                            <img src='https://secure.gravatar.com/avatar/d42750a7764148ea9a23aa049e8e2efa.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fm-avatar.png'/>                        </button>
-                        
+
+                            <img src='https://secure.gravatar.com/avatar/d42750a7764148ea9a23aa049e8e2efa.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fm-avatar.png' />                        </button>
+
                         {/* User dropdown menu */}
                         {showUserDropdown && (
-                            <div 
+                            <div
                                 className="absolute top-full right-0 mt-1 bg-white rounded-lg shadow-lg border border-gray-200 w-84 z-50"
                                 onMouseEnter={() => setShowUserDropdown(true)}
                                 onMouseLeave={() => setShowUserDropdown(false)}
@@ -532,7 +510,7 @@ function Navbar() {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div>
                                     <a href="#" className="flex items-center justify-between p-3 hover:bg-gray-50 text-gray-700">
                                         <span>Notifications</span>
@@ -544,16 +522,16 @@ function Navbar() {
                                     <a href="#" className="block p-3 hover:bg-gray-50 text-gray-700">Account & billing</a>
                                     <a href="#" className="block p-3 hover:bg-gray-50 text-gray-700">Pricing plans</a>
                                     <a href="#" className="block p-3 hover:bg-gray-50 text-gray-700">Hire an expert</a>
-                                    
+
                                     <a href="#" className="flex items-center justify-between p-3 hover:bg-gray-50 text-gray-700">
                                         <span>Support</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </a>
-                                    
+
                                     <a href="#" className="block p-3 hover:bg-gray-50 text-gray-700">Get cobrowse code</a>
-                                    
+
                                     <a href="#" className="flex items-center justify-between p-3 hover:bg-gray-50 text-gray-700 border-t border-gray-100">
                                         <div className="flex items-center">
                                             <span className="w-6 h-6 flex items-center justify-center mr-2">🌐</span>
@@ -563,10 +541,10 @@ function Navbar() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </a>
-                                    
+
                                     <a href="#" className="block p-3 hover:bg-gray-50 text-gray-700">Log out</a>
                                 </div>
-                                
+
                                 <div className="border-t border-gray-100 p-3">
                                     <a href="#" className="block  text-gray-500 hover:underline">Privacy and Terms</a>
                                     <a href="#" className="block text-gray-500 hover:underline">Cookie Preferences</a>
@@ -578,7 +556,7 @@ function Navbar() {
             </div>
 
             {/* Add a spacer div to push content down based on the fixed navbar height */}
-            <div style={{ paddingTop: bannerVisible ? '91px' : '50px' }} />
+
 
             {/* Search Overlay */}
             {searchActive && (

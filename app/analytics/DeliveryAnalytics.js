@@ -314,7 +314,7 @@ export default function DeliveryAnalytics() {
     ];
 
     return (
-        <div className="bg-white font-sans mx-auto p-6 border border-[#e6e6e6] rounded-lg mt-4 my-4">
+        <div className="bg-white font-sans mx-auto p-6 border border-[#C3CED5] rounded-lg mt-4 my-4">
             {/* Header */}
             <h2 className="text-[20px] font-medium">Delivery</h2>
             <div className="text-[15px] mt-1">

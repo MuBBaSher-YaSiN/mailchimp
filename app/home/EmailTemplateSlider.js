@@ -493,14 +493,14 @@ export default function EmailTemplateSlider() {
   };
 
   return (
-    <div className="max-w-6xl w-full mx-auto p-6 overflow-hidden mt-10">
+    <div className="max-w-[1092px] w-full mx-auto p-6 overflow-hidden mt-10">
       <div className='px-6 border border-zinc-300 p-4  rounded-xl'>
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-medium text-[#333333]">Top templates for N/A</h2>
           <Link
             href="/email-templates"
-            className="text-[#007c89] hover:text-[#005d68] text-sm font-medium flex items-center transition-colors"
+            className="text-[#017E89] hover:text-[#005d68] text-[14px] font-medium flex items-center transition-colors"
           >
             View all email templates
             <svg className="ml-1.5 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -538,7 +538,7 @@ export default function EmailTemplateSlider() {
 
                       {/* Overlay with buttons on hover */}
                       {(hoveredTemplate === template.id || template.active) && (
-                        <div className="absolute inset-0 bg-white bg-opacity-25 flex flex-col items-center justify-center transition-opacity duration-300">
+                        <div className="absolute inset-0 bg-white opacity-[.9] flex flex-col items-center justify-center transition-opacity duration-300">
                           <button
                             className="bg-[#007c89] hover:bg-[#005d68] text-white py-2 px-4 rounded text-sm font-medium mb-2 transition-colors"
                           >
@@ -578,7 +578,7 @@ export default function EmailTemplateSlider() {
                           <span>{template.type === 'email' ? 'Email' : 'Automation'}</span>
                         </div>
                       )}
-                      <h3 className="text-[15px] font-medium text-[#333333]">{template.title}</h3>
+                      <h3 className="text-[14px] font-medium text-[#181C1F]">{template.title}</h3>
                     </div>
                   </div>
                 ))}
@@ -601,7 +601,7 @@ export default function EmailTemplateSlider() {
 
         {/* Footer Controls */}
         <div className="flex justify-between items-center mt-8">
-          <button className="px-4 py-2 border border-[#e5e5e5] rounded text-[#333333] text-sm hover:bg-[#f8f8f8] transition-colors">
+          <button className="px-4 py-1 border border-[#e5e5e5] rounded text-[#21262A] text-sm hover:bg-[#f8f8f8] transition-colors">
             Start from scratch
           </button>
 
@@ -619,7 +619,7 @@ export default function EmailTemplateSlider() {
               </svg>
             </button>
 
-            <span className="text-sm text-[#666666] mx-2">
+            <span className="text-sm text-[#21262A] mx-2">
               {currentPage} of {totalPages}
             </span>
 

@@ -158,7 +158,7 @@ export default function MailchimpWixPromo() {
     }, []);
 
     return (
-        <div className="w-full max-w-[1100px] mx-auto px-6 py-10 md:px-4 md:py-16">
+        <div className="w-full max-w-[1248px] mx-auto px-6 py-2">
             <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16">
                 {/* Left content */}
                 <div className="w-full lg:w-1/2">
@@ -170,7 +170,7 @@ export default function MailchimpWixPromo() {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-[32px] font-medium text-[#241c15] mb-4 leading-tight">
+                    <h2 className="text-[34px] font-medium text-[#21262A] mb-4 leading-tight">
                         Elevate your Business with a Wix Website
                     </h2>
 
@@ -192,7 +192,7 @@ export default function MailchimpWixPromo() {
                                     <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
                                 </svg>
                             </span>
-                            <span className="text-[15px] text-[#241c15]">Launch a professional website in minutes</span>
+                            <span className="text-[16px] text-[#21262A]">Launch a professional website in minutes</span>
                         </li>
 
                         <li className="flex items-start">
@@ -201,7 +201,7 @@ export default function MailchimpWixPromo() {
                                     <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
                                 </svg>
                             </span>
-                            <span className="text-[15px] text-[#241c15]">Grow your audience by automatically syncing your subscribers, leads, and customers</span>
+                            <span className="text-[16px] text-[#21262A]">Grow your audience by automatically syncing your subscribers, leads, and customers</span>
                         </li>
 
                         <li className="flex items-start">
@@ -210,7 +210,7 @@ export default function MailchimpWixPromo() {
                                     <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
                                 </svg>
                             </span>
-                            <span className="text-[15px] text-[#241c15]">Automate your email and SMS campaigns based on website behavior*</span>
+                            <span className="text-[16px] text-[#21262A]">Automate your email and SMS campaigns based on website behavior*</span>
                         </li>
 
                         <li className="flex items-start">
@@ -219,7 +219,7 @@ export default function MailchimpWixPromo() {
                                     <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
                                 </svg>
                             </span>
-                            <span className="text-[15px] text-[#241c15]">Choose from 900+ pre-designed templates or use the AI website builder</span>
+                            <span className="text-[16px] text-[#21262A]">Choose from 900+ pre-designed templates or use the AI website builder</span>
                         </li>
 
                         <li className="flex items-start">
@@ -228,16 +228,16 @@ export default function MailchimpWixPromo() {
                                     <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
                                 </svg>
                             </span>
-                            <span className="text-[15px] text-[#241c15]">Step by step help from a dedicated Wix support team</span>
+                            <span className="text-[16px] text-[#21262A]">Step by step help from a dedicated Wix support team</span>
                         </li>
                     </ul>
 
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="bg-[#277e89] hover:bg-[#1b5a62] text-white px-3 py-1 rounded transition-colors text-[15px] font-medium">
+                        <button className="bg-[#277e89] hover:bg-[#1b5a62] text-white px-3 py-1 rounded transition-colors text-[14px] font-medium">
                             Get started for free
                         </button>
-                        <button className="bg-[#f2f2f2] hover:bg-[#e5e5e5] text-[#241c15] px-3 py-1 rounded transition-colors text-[15px] font-medium">
+                        <button className="bg-[#E2E9ED] hover:bg-[#e5e5e5] text-[#241c15] px-3 py-1 rounded transition-colors text-[14px] font-medium">
                             Connect existing Wix site
                         </button>
                     </div>

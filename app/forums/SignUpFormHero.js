@@ -8,7 +8,7 @@ export default function SignUpFormHero() {
         <div className="w-full bg-[#deeaf7] py-16 md:py-20">
             <div className="max-w-[1200px] mx-auto px-6 text-center">
                 {/* Main heading */}
-                <h1 className="text-4xl  font-semibold text-[#241c15] mb-6 max-w-[650px] mx-auto">
+                <h1 className="text-[40px] font-semibold text-[#212662A] mb-6 max-w-[650px] mx-auto">
                     Transform site visitors<br className="hidden md:block" /> into email and SMS subscribers
                 </h1>
 
@@ -19,7 +19,7 @@ export default function SignUpFormHero() {
 
                 {/* See Terms Link */}
                 <div className="mb-10">
-                    <Link href="/terms" className="text-sm font-medium text-[#241c15] ">
+                    <Link href="/terms" className="text-[12px] font-medium text-[#212662A] ">
                         See Terms
                     </Link>
                 </div>

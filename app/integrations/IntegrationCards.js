@@ -77,11 +77,11 @@ export default function IntegrationCards() {
     ];
 
     return (
-        <div className="mx-auto w-[80%] p-4 mb-8">
+        <div className="mx-auto  mb-8">
             {/* Grid of Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 px-4 gap-6">
                 {cards.map((card, index) => (
-                    <div key={index} className="bg-white py-16 border border-gray-300 rounded-lg hover:border-3 hover:border-black shadow-sm p-6 flex flex-col items-center ">
+                    <div key={index} className="bg-white 2xl-w-[414px] py-16 border border-gray-300 rounded-lg hover:border-3 hover:border-black shadow-sm p-6 flex flex-col items-center ">
                         {/* Badge */}
                         <span className="mb-3 text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">{card.badge}</span>
                         {/* Logo */}

@@ -7,15 +7,15 @@ export default function PerformanceMetricsComponent() {
   return (
     <>
       {/* Monitor performance card */}
-      <div className="bg-white border border-[#e6e6e6] rounded-lg mb-6 p-6">
+      <div className="bg-white border border-[#C3CED5] rounded-lg mb-6 p-6">
         <div className="flex gap-3 items-center mb-3">
-          <h2 className="text-[22px] font-medium text-[#241c15]">Monitor performance</h2>
+          <h2 className="text-[20px] font-medium text-[#21262A]">Monitor performance</h2>
           <button className="text-[#007c89]">
-            <GoPencil size={20} />
+            <GoPencil size={24} />
           </button>
         </div>
 
-        <div className="text-[#6b6b6b] text-sm mb-6 font-medium border-b pb-4">
+        <div className="text-[#4C555B] text-sm mb-6 font-medium border-b pb-4">
           Jun 5, 2025 - Jul 5, 2025 • Compared to last 31 days • <span className="text-[#d48400] bg-[#fcf0ea] text-md p-0.5 rounded font-medium bg-[]">Includes</span> Apple MPP
         </div>
 
@@ -25,10 +25,10 @@ export default function PerformanceMetricsComponent() {
               <svg className="w-4 h-4 text-[#757575] mr-1.5" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="12" cy="12" r="10" strokeWidth="2" stroke="currentColor" fill="none" />
               </svg>
-              <span className="text-[16px] border-b-3 border-dotted border-[#6b6b6b]">Total sends</span>
+              <span className="text-[16px] border-b-2 border-dashed border-[#017e89] text-[#21262A]">Total sends</span>
             </div>
-            <div className="text-[28px] font-medium">0</div>
-            <div className="text-[13px] text-[#6b6b6b]">--</div>
+            <div className="text-[24px] text-[#21262A] font-medium">0</div>
+            <div className="text-[13px] text-[#21262A]">--</div>
           </div>
 
           <div className="flex flex-col">
@@ -36,9 +36,9 @@ export default function PerformanceMetricsComponent() {
               <svg className="w-4 h-4 text-[#757575] mr-1.5" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="12" cy="12" r="10" strokeWidth="2" stroke="currentColor" fill="none" />
               </svg>
-              <span className="text-[16px] border-b-3 border-dotted border-[#6b6b6b]">Open rate</span>
+              <span className="text-[16px] border-b-2 border-dashed border-[#017e89] text-[#21262A]">Open rate</span>
             </div>
-            <div className="text-[28px] font-medium">0%</div>
+            <div className="text-[24px] text-[#21262A] font-medium">0%</div>
           </div>
 
           <div className="flex flex-col">
@@ -46,9 +46,9 @@ export default function PerformanceMetricsComponent() {
               <svg className="w-4 h-4 text-[#757575] mr-1.5" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="12" cy="12" r="10" strokeWidth="2" stroke="currentColor" fill="none" />
               </svg>
-              <span className="text-[16px] border-b-3 border-dotted border-[#6b6b6b]">Click rate</span>
+              <span className="text-[16px] border-b-2 border-dashed border-[#017e89] text-[#21262A]">Click rate</span>
             </div>
-            <div className="text-[28px] font-medium">0%</div>
+            <div className="text-[24px] text-[#21262A] font-medium">0%</div>
           </div>
 
           <div className="flex flex-col">
@@ -56,18 +56,18 @@ export default function PerformanceMetricsComponent() {
               <svg className="w-4 h-4 text-[#757575] mr-1.5" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="12" cy="12" r="10" strokeWidth="2" stroke="currentColor" fill="none" />
               </svg>
-              <span className="text-[16px] border-b-3 border-dotted border-[#6b6b6b]">Unsubscribe rate</span>
+              <span className="text-[16px] border-b-2 border-dashed border-[#017e89] text-[#21262A]">Unsubscribe rate</span>
             </div>
-            <div className="text-[28px] font-medium">0%</div>
+            <div className="text-[24px] text-[#21262A] font-medium">0%</div>
           </div>
         </div>
       </div>
 
       {/* Performance over time card */}
-      <div className="bg-white border border-[#e6e6e6] h-[500px] rounded-lg p-6">
+      <div className="bg-white border border-[#C3CED5] h-[500px] rounded-lg p-6">
         <div>
-          <h2 className="text-[20px] font-medium text-[#241c15] mb-3">Performance over time</h2>
-          <div className="text-[13px] text-[#6b6b6b] mb-6">
+          <h2 className="text-[20px] font-medium text-[#21262A] mb-3">Performance over time</h2>
+          <div className="text-[13px] text-[#4C555B] mb-6">
             Jun 5, 2025 - Jul 5, 2025 • Compared to last 31 days
           </div>
         </div>
@@ -77,10 +77,10 @@ export default function PerformanceMetricsComponent() {
           <div className="w-[50%]">
             <div className="flex flex-col">
               <div className="flex items-center mb-1">
-                <span className="text-[17px] border-b-3 border-dotted">Click rate</span>
+                <span className="text-[16px] text-[#21262A] border-b border-dashed">Click rate</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="text-[28px] font-medium">0%</div>
+                <div className="text-[24px] text-[#21262A] font-medium">0%</div>
                 <div className="text-[16px] text-[#6b6b6b] bg-[#f0f4f6] w-8 h-8 p-1 rounded-full text-center font-bold">--</div>
               </div>
 
@@ -137,12 +137,12 @@ export default function PerformanceMetricsComponent() {
 
             <div className="mt-auto space-y-3 border-l border-gray-300 h-[80%] px-5">
               <div className="flex justify-between max-w-90 border-b border-gray-300 pb-2">
-                <span className="text-[14px]">Total message count</span>
-                <span className="text-[14px] font-medium">0</span>
+                <span className="text-[14px] text-[#21262A]">Total message count</span>
+                <span className="text-[14px] text-[#21262A] font-medium">0</span>
               </div>
               <div className="flex justify-between max-w-90">
-                <span className="text-[14px]">Total messages sent</span>
-                <span className="text-[14px] font-medium">0</span>
+                <span className="text-[14px] text-[#21262A]">Total messages sent</span>
+                <span className="text-[14px] text-[#21262A] font-medium">0</span>
               </div>
             </div>
           </div>

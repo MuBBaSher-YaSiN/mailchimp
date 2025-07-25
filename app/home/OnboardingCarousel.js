@@ -73,15 +73,15 @@ const OnboardingCarousel = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-4 py-8 sm:p-6 min-h-[300px] mt-4">
+    <div className="max-w-[1092px] mx-auto p-4 py-8 sm:p-6 min-h-[300px] mt-4">
       <div className='flex'>
         <div className="mb-6 sm:mb-8 flex flex-col justify-center rounded-lg mr-4">
-          <h2 className="text-[20px] font-medium mb-2">Finish setting up your account</h2>
+          <h2 className="text-[20px] text-[#2B3135] font-medium mb-2">Finish setting up your account</h2>
           <div className="flex items-center">
             <span className="mr-2 text-sm">0%</span>
             <div className="w-[90%] mx-auto h-2 bg-[#d9e6f2] rounded-full"></div>
           </div>
-          <p className="text-sm mt-2"><span className="text-[#267c89]">0 of 4</span> tasks completed</p>
+          <p className="text-[12px] text- mt-2"><span className="text-[#005056] italic">0 of 4</span> tasks completed</p>
         </div>
 
         {/* Sliding Task Cards */}

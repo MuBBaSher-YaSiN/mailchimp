@@ -4,9 +4,9 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="w-full sticky top-5 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
+    <header className="w-full sticky top-0 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
       {/* Left side - Home title */}
-      <h1 className="text-[24px] font-medium text-[#212529]">Marketing dashboard</h1>
+      <h1 className="heading_text">Marketing dashboard</h1>
       
       {/* Right side - Actions */}
       <div className="flex items-center gap-3">
@@ -48,7 +48,7 @@ export default function Header() {
 
         {/* Create Email Button */}
         <button 
-          className="px-5 py-2 bg-[#e2e9ed]  rounded-md text-sm text-gray-400 transition-colors"
+          className="px-5 py-1 bg-[#e2e9ed]  rounded-md text-sm text-gray-400 transition-colors"
         >
           Atrribution Setting
         </button>

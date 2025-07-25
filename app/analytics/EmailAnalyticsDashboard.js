@@ -174,13 +174,13 @@ export default function EmailAnalyticsDashboard() {
         <div className="border-b border-[#e1e1e1] mb-6">
           <div className="flex">
             <button
-              className={`pb-3 mr-6 text-[15px] font-medium ${selectedTab === 'performance' ? 'text-[#007c89] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
+              className={`pb-3 mr-6 text-[15px] font-medium ${selectedTab === 'performance' ? 'text-[#21262A] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
               onClick={() => setSelectedTab('performance')}
             >
               Performance
             </button>
             <button
-              className={`pb-3 text-[15px] font-medium ${selectedTab === 'compare' ? 'text-[#007c89] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
+              className={`pb-3 text-[15px] font-medium ${selectedTab === 'compare' ? 'text-[#21262A] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
               onClick={() => setSelectedTab('compare')}
             >
               Compare message performance

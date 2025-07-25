@@ -2,12 +2,12 @@ import React from 'react';
 
 const EmptyGraphState = () => {
     return (
-        <div className="bg-white rounded-lg border border-gray-200 h-[60vh] p-8 flex justify-center items-center gap-3 w-full">
+        <div className="bg-white rounded-lg border border-[#C3CED5] h-[568px] p-8 flex justify-center items-center gap-3 w-full">
             <div className="max-w-md pr-4">
                 <h2 className="text-[20px] font-medium text-[#21262A] mb-3">
                     No individual message performance data yet
                 </h2>
-                <p className="text-gray-600 text-[15px] leading-relaxed mb-5">
+                <p className="text-[#21262A] text-[16px] leading-relaxed mb-5">
                     Performance data for your individual messages will appear here.
                     You'll see the impact each message is having and gain insight into
                     user behavior.

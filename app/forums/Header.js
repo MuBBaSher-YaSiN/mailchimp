@@ -4,16 +4,16 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="w-full sticky top-5 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
+    <header className=" w-full sticky top-0 py-6 px-4 md:px-14 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
       {/* Left side - Home title */}
-      <h1 className="text-3xl font-medium text-[#212529]">PopUp Forms</h1>
+      <h1 className="heading_text">PopUp Forms</h1>
       
       {/* Right side - Actions */}
       <div className="flex items-center gap-3">
         {/* Quick Actions Dropdown */}
         <div className="relative">
           <button 
-            className="px-4 py-2 border border-[#d9d9d9] rounded-md bg-white text-[#333] hover:bg-gray-50 flex items-center gap-2 text-sm font-medium transition-colors"
+            className="px-4 py-1 border border-[#d9d9d9] rounded-md bg-white text-[#333] hover:bg-gray-50 flex items-center gap-2 text-sm font-medium transition-colors"
             aria-haspopup="true"
             aria-expanded="false"
           >
@@ -48,7 +48,7 @@ export default function Header() {
 
         {/* Create Email Button */}
         <button 
-          className="px-4 py-2 bg-[#007c89] hover:bg-[#005d68] text-white rounded-md text-sm font-medium transition-colors"
+          className="px-4 py-1 bg-[#007c89] hover:bg-[#005d68] text-white rounded-md text-sm font-medium transition-colors"
         >
           Create Popup form
                </button>

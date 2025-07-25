@@ -370,19 +370,19 @@ export default function FileManager() {
             <div className="border-b border-gray-200">
                 <nav className="flex px-4 sm:px-6 lg:px-8">
                     <div className="flex space-x-8">
-                        <a href="#" className="border-b-2 border-[#277e89] text-gray-900 inline-flex items-center px-1 py-4 text-lg">
+                        <a href="#" className="border-b-2 border-[#017e89] text-[#21262A] inline-flex items-center px-1 py-4 text-[16px]">
                             Uploads
                         </a>
-                        <a href="#" className="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 py-4 text-lg">
+                        <a href="#" className="text-[#21262A] hover:text-gray-700 inline-flex items-center px-1 py-4 text-[16px]">
                             My products
                         </a>
-                        <a href="#" className="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 py-4 text-lg">
+                        <a href="#" className="text-[#21262A] hover:text-gray-700 inline-flex items-center px-1 py-4 text-[16px]">
                             Instagram
                         </a>
-                        <a href="#" className="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 py-4 text-lg">
+                        <a href="#" className="text-[#21262A] hover:text-gray-700 inline-flex items-center px-1 py-4 text-[16px]">
                             Giphy
                         </a>
-                        <a href="#" className="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 py-4 text-lg">
+                        <a href="#" className="text-[#21262A] hover:text-gray-700 inline-flex items-center px-1 py-4 text-[16px]">
                             Canva
                         </a>
                     </div>
@@ -393,7 +393,7 @@ export default function FileManager() {
             <div className="px-4 sm:px-6 lg:px-8 py-6">
                 {/* Search and Upload */}
                 <div className="flex items-center justify-between">
-                    <div className="w-full max-w-lg relative">
+                    <div className="w-full max-w-[767px] relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -408,7 +408,7 @@ export default function FileManager() {
                     <div className="flex">
                         <button
                             type="button"
-                            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-l-md text-white bg-[#277e89] hover:bg-[#1d6670] focus:outline-none"
+                            className="inline-flex items-center px-2 py-1 border border-transparent text-sm font-medium rounded-l-md text-white bg-[#277e89] hover:bg-[#1d6670] focus:outline-none"
                         >
                             Upload
                         </button>
@@ -428,7 +428,7 @@ export default function FileManager() {
                     <div className="flex space-x-2">
                         <div className="relative inline-block text-left">
                             <button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
-                                <span className="flex items-center">
+                                <span className="flex items-center text-[14px] text-[#21262A] ">
                                     Filter
                                     <svg className="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -439,7 +439,7 @@ export default function FileManager() {
 
                         <div className="relative inline-block text-left">
                             <button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
-                                <span className="flex items-center">
+                                <span className="flex items-center text-[14px] text-[#21262A]">
                                     Folder
                                     <svg className="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -450,7 +450,7 @@ export default function FileManager() {
                     </div>
 
                     <div className="flex items-center">
-                        <span className="text-sm text-gray-700 mr-2">Sort by</span>
+                        <span className="text-[16px] text-[#21262A] font-medium mr-2">Sort by</span>
                         <div className="relative inline-block text-left mr-4">
                             <button className="inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
                                 <span className="flex items-center">
@@ -462,7 +462,7 @@ export default function FileManager() {
                             </button>
                         </div>
 
-                        <div className="flex">
+                        <div className="flex border rounded border-[C3CED5]">
                             <button
                                 onClick={() => setViewMode('grid')}
                                 className={`p-1.5 rounded ${viewMode === 'grid' ? 'bg-gray-200' : ''}`}
@@ -528,7 +528,7 @@ export default function FileManager() {
                                     </div>
                                     <div className="min-w-0 flex-1">
                                         <p className="text-sm font-medium text-gray-900 mb-0.5">{file.name}</p>
-                                        <p className="text-xs text-gray-500">
+                                        <p className="text-[14px] text-gray-500">
                                             {file.date} • {file.dimensions} • {file.size} • {file.type}
                                         </p>
                                     </div>

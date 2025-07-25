@@ -10,7 +10,7 @@ function page() {
   return (
     <div className='w-full'>
       <Header/>
-      <div className='max-w-6xl mx-auto lg:flex'>
+      <div className='max-w-[1232px] mx-auto lg:flex'>
         <div>
           <FilterPanel />
         </div>

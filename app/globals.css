@@ -31,7 +31,12 @@ body {
 
 
 
-
+*{
+  font-family:  "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+/* *{
+  font-family:  "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+} */
 
 
 .loader {
@@ -46,4 +51,17 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+.normal_text{
+  color: #21262A;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.heading_text{
+  color: #21262A;
+  font-size: 24px;
+  font-weight: 500;
 }

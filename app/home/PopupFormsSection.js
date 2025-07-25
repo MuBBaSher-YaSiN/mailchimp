@@ -46,17 +46,17 @@ export default function PopupFormsSection() {
   ];
 
   return (
-    <div className="max-w-[1200px] mx-auto p-8 mt-4 bg-white rounded-lg shadow-sm">
+    <div className="max-w-[1092px] mx-auto p-8 mt-4 bg-white rounded-lg shadow-sm">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center">
-          <h2 className="text-2xl text-[#241c15] font-medium mr-2">
+          <h2 className="text-[20px] text-[#21262A] font-medium mr-2">
             Grow your audience with custom popup forms
           </h2>
           <span className="bg-[#f9f0ff] text-[#704295] text-xs font-medium py-0.5 px-2 rounded">
             Beta
           </span>
         </div>
-        <Link href="/popup-forms" className="text-[#007c89] font-medium flex items-center hover:underline">
+        <Link href="/popup-forms" className="text-[#017E89] text-[14px]  font-medium flex items-center hover:underline">
           View all popup forms
           <svg className="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
@@ -64,7 +64,7 @@ export default function PopupFormsSection() {
         </Link>
       </div>
 
-      <p className="text-[#241c15] text-base mb-6">
+      <p className="text-[#21262A] text-[16px] mb-6">
         Popups with incentives convert best. Choose the incentive you want to offer people who sign up through your form.
       </p>
 
@@ -86,9 +86,9 @@ export default function PopupFormsSection() {
                   {template.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-[#241c15] mb-1">{template.title}</h3>
-                  <p className="text-[#6b6b6b] text-sm mb-3">{template.description}</p>
-                  <Link href={`/templates/${template.id}`} className="text-[#007c89] text-sm font-medium hover:underline">
+                  <h3 className="text-[16px] font-medium text-[#212662A] mb-1">{template.title}</h3>
+                  <p className="text-[#4C555B] text-[14px] mb-3">{template.description}</p>
+                  <Link href={`/templates/${template.id}`} className="text-[#017e89] text-[14px] font-medium hover:underline">
                     {template.linkText}
                   </Link>
                 </div>

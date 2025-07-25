@@ -67,10 +67,10 @@ export default function FilterPanel() {
   ];
 
   return (
-    <div className="w-[280px] bg-white p-4 px-12 lg:px-0 text-[#333333]">
+    <div className="w-[248px] bg-white p-4 px-12 lg:px-0 text-[#21262A]">
       {/* Discover Section */}
       <div className="mb-6">
-        <h3 className="font-semibold text-black mb-3">Discover</h3>
+        <h3 className="font-semibold text-[#21262A] mb-3">Discover</h3>
         {discoverItems.map((item) => (
           <div key={item.name} className="flex my-2 items-center mb-2 my-4">
             <input
@@ -87,7 +87,7 @@ export default function FilterPanel() {
 
       {/* Category Section */}
       <div>
-        <h3 className="font-semibold text-black mb-3">Category</h3>
+        <h3 className="font-semibold mb-3">Category</h3>
         {categoryItems.map((item) => (
           <div key={item.name} className="flex items-center mb-2 my-4">
             <input

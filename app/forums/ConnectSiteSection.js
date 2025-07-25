@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ConnectSiteSection() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-8">
+    <div className="max-w-[1148px] mx-auto px-6 py-8">
       {/* Connect Your Site Panel */}
       <div className="flex flex-col md:flex-row border border-[#e6e6e6] rounded-lg mb-8 overflow-hidden">
         {/* Left side - Orange background with browser mockup */}

@@ -22,7 +22,7 @@ export default function WonderTestimonial() {
                     <div>
                         <p className="text-[#676767] text-sm my-1">From our customers</p>
 
-                        <h2 className="font-medium text-3xl text-[#241C15] ">
+                        <h2 className="font-[550] text-[32px] text-[#21262A] ">
                             One of the biggest victories for us is based on one of the flows. We had attendance of our special events increase by 32%.
                         </h2>
 

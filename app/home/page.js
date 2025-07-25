@@ -11,7 +11,7 @@ export default function Home() {
         
             <div className="">
                 <Header />
-                <div className="px-8">
+                <div className="">
                     <OnboardingCarousel />
                     <EmailTemplateSlider />
                     <PopupFormsSection />

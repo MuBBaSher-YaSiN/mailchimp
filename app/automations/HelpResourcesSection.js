@@ -6,13 +6,13 @@ import Link from 'next/link';
 
 export default function HelpResourcesSection() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8 ">
+    <div className="max-w-[1248px] mx-auto px-4 py-8 ">
       <h2 className="text-2xl font-medium text-[#241c15] mb-4">Need some help?</h2>
       <div className="h-px bg-[#e6e6e6] mb-6"></div>
       
-      <div className="flex flex-wrap md:justify-evenly justify-start max-w-5xl gap-3  mx-auto ">
+      <div className="flex flex-wrap md:justify-between justify-start    mx-auto ">
         {/* Card 1: About automation flows */}
-        <div className="flex flex-col  w-full md:w-[320px] ">
+        <div className="flex flex-col  w-full md:w-[376px] ">
           <div className="bg-[#f9f9f9] rounded-lg overflow-hidden  mb-4 flex items-center justify-center">
             <img
               src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/cjb_paths_builder.jpg"
@@ -22,7 +22,7 @@ export default function HelpResourcesSection() {
           </div>
           <div className="flex flex-col">
             <span className="text-[#6b6b6b] text-sm mb-1">getting started</span>
-            <h3 className="text-xl font-medium text-[#241c15] mb-2">About automation flows</h3>
+            <h3 className="text-xl font-meduim text-[#21262A] mb-2">About automation flows</h3>
             <p className="text-[#4a4a4a] text-base">
               Get started with our automation builder, and create dynamic marketing paths for your contacts.
             </p>
@@ -30,7 +30,7 @@ export default function HelpResourcesSection() {
         </div>
         
         {/* Card 2: Quick start video */}
-        <div className="flex flex-col w-full md:w-[320px] ">
+        <div className="flex flex-col w-full md:w-[376px] ">
           <div className="bg-[#f9f9f9] rounded-lg overflow-hidden mb-4 relative">
             <img
               src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/quick_start_video.jpg"
@@ -45,7 +45,7 @@ export default function HelpResourcesSection() {
           </div>
           <div className="flex flex-col">
             <span className="text-[#6b6b6b] text-sm mb-1">tutorial</span>
-            <h3 className="text-xl font-medium text-[#241c15] mb-2">Quick start video</h3>
+            <h3 className="text-xl font-medium text-[##21262A] mb-2">Quick start video</h3>
             <p className="text-[#4a4a4a] text-base">
               Watch as we guide you through the process of setting up an automation with the flow builder.
             </p>
@@ -53,7 +53,7 @@ export default function HelpResourcesSection() {
         </div>
         
         {/* Card 3: Create an automation flow */}
-        <div className="flex flex-col w-full md:w-[320px]">
+        <div className="flex flex-col w-full md:w-[376px]">
           <div className="bg-[#f9f9f9] rounded-lg overflow-hidden mb-4">
             <img
               src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/create_customer_journey.jpg"
@@ -63,7 +63,7 @@ export default function HelpResourcesSection() {
           </div>
           <div className="flex flex-col">
             <span className="text-[#6b6b6b] text-sm mb-1">step-by-step guide</span>
-            <h3 className="text-xl font-medium text-[#241c15] mb-2">Create an automation flow</h3>
+            <h3 className="text-xl font-medium text-[#21262A] mb-2">Create an automation flow</h3>
             <p className="text-[#4a4a4a] text-base">
               Learn how to build automated workflows that deliver personalized experiences for your contacts.
             </p>
