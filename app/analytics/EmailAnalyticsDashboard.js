@@ -10,17 +10,16 @@
 //       <div className="max-w-5xl mx-auto px-5 pt-6">
 //         {/* Filters row */}
 
-
 //         {/* Tabs */}
 //         <div className="border-b border-[#e1e1e1] mb-6">
 //           <div className="flex">
-//             <button 
+//             <button
 //               className={`pb-3 mr-6 text-[15px] font-medium ${selectedTab === 'performance' ? 'text-[#007c89] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
 //               onClick={() => setSelectedTab('performance')}
 //             >
 //               Performance
 //             </button>
-//             <button 
+//             <button
 //               className={`pb-3 text-[15px] font-medium ${selectedTab === 'compare' ? 'text-[#007c89] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
 //               onClick={() => setSelectedTab('compare')}
 //             >
@@ -146,21 +145,18 @@
 //   );
 // }
 
+"use client";
 
-
-
-'use client'
-
-import { useState } from 'react'
-import DateFilterComponent from './DateFilterComponent' // Assuming you have this component
-import PerformanceMetricsComponent from './PerformanceMetricsComponent'
-import ConversionsDashboard from './ConversionsDashboard'
-import DeliveryAnalytics from './DeliveryAnalytics'
-import EmptyGraphState from './EmptyGraphState'
-import DetailedMessagePerfomance from './DetailedMessagePerfomance'
+import { useState } from "react";
+import DateFilterComponent from "./DateFilterComponent"; // Assuming you have this component
+import PerformanceMetricsComponent from "./PerformanceMetricsComponent";
+import ConversionsDashboard from "./ConversionsDashboard";
+import DeliveryAnalytics from "./DeliveryAnalytics";
+import EmptyGraphState from "./EmptyGraphState";
+import DetailedMessagePerfomance from "./DetailedMessagePerfomance";
 
 export default function EmailAnalyticsDashboard() {
-  const [selectedTab, setSelectedTab] = useState('performance')
+  const [selectedTab, setSelectedTab] = useState("performance");
 
   return (
     <div className="bg-[#f9f9f9] font-sans text-[#333] mt-6">
@@ -174,14 +170,22 @@ export default function EmailAnalyticsDashboard() {
         <div className="border-b border-[#e1e1e1] mb-6">
           <div className="flex">
             <button
-              className={`pb-3 mr-6 text-[15px] font-medium ${selectedTab === 'performance' ? 'text-[#21262A] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
-              onClick={() => setSelectedTab('performance')}
+              className={`pb-3 mr-6 text-[15px] font-medium ${
+                selectedTab === "performance"
+                  ? "text-[#21262A] border-b-2 border-[#007c89]"
+                  : "text-[#555]"
+              }`}
+              onClick={() => setSelectedTab("performance")}
             >
               Performance
             </button>
             <button
-              className={`pb-3 text-[15px] font-medium ${selectedTab === 'compare' ? 'text-[#21262A] border-b-2 border-[#007c89]' : 'text-[#555]'}`}
-              onClick={() => setSelectedTab('compare')}
+              className={`pb-3 text-[15px] font-medium ${
+                selectedTab === "compare"
+                  ? "text-[#21262A] border-b-2 border-[#007c89]"
+                  : "text-[#555]"
+              }`}
+              onClick={() => setSelectedTab("compare")}
             >
               Compare message performance
             </button>
@@ -189,7 +193,7 @@ export default function EmailAnalyticsDashboard() {
         </div>
 
         {/* Conditional rendering based on selected tab */}
-        {selectedTab === 'performance' ? (
+        {selectedTab === "performance" ? (
           // Original performance content
           <>
             {/* Monitor performance card */}
@@ -204,80 +208,84 @@ export default function EmailAnalyticsDashboard() {
             <EmptyGraphState />
             <DetailedMessagePerfomance />
           </>
-
         )}
       </div>
     </div>
-  )
+  );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // The MessageComparisonComponent to be rendered when "Compare message performance" is clicked
 function MessageComparisonComponent() {
   const [selectedMessages, setSelectedMessages] = useState([
-    { id: 1, name: 'Monthly Newsletter - June', sends: 2450, openRate: '32.4%', clickRate: '8.7%', unsubRate: '0.3%' },
-    { id: 2, name: 'Product Update - Summer 2025', sends: 1850, openRate: '28.9%', clickRate: '10.2%', unsubRate: '0.2%' }
-  ])
+    {
+      id: 1,
+      name: "Monthly Newsletter - June",
+      sends: 2450,
+      openRate: "32.4%",
+      clickRate: "8.7%",
+      unsubRate: "0.3%",
+    },
+    {
+      id: 2,
+      name: "Product Update - Summer 2025",
+      sends: 1850,
+      openRate: "28.9%",
+      clickRate: "10.2%",
+      unsubRate: "0.2%",
+    },
+  ]);
 
   const [availableMessages, setAvailableMessages] = useState([
-    { id: 3, name: 'Limited Time Offer', sends: 3200, openRate: '35.7%', clickRate: '15.3%', unsubRate: '0.4%' },
-    { id: 4, name: 'Customer Feedback Survey', sends: 1750, openRate: '25.1%', clickRate: '6.8%', unsubRate: '0.5%' }
-  ])
+    {
+      id: 3,
+      name: "Limited Time Offer",
+      sends: 3200,
+      openRate: "35.7%",
+      clickRate: "15.3%",
+      unsubRate: "0.4%",
+    },
+    {
+      id: 4,
+      name: "Customer Feedback Survey",
+      sends: 1750,
+      openRate: "25.1%",
+      clickRate: "6.8%",
+      unsubRate: "0.5%",
+    },
+  ]);
 
   // Function to add a message to the comparison
   const addMessage = (message) => {
-    setSelectedMessages([...selectedMessages, message])
-    setAvailableMessages(availableMessages.filter(m => m.id !== message.id))
-  }
+    setSelectedMessages([...selectedMessages, message]);
+    setAvailableMessages(availableMessages.filter((m) => m.id !== message.id));
+  };
 
   // Function to remove a message from the comparison
   const removeMessage = (message) => {
-    setAvailableMessages([...availableMessages, message])
-    setSelectedMessages(selectedMessages.filter(m => m.id !== message.id))
-  }
+    setAvailableMessages([...availableMessages, message]);
+    setSelectedMessages(selectedMessages.filter((m) => m.id !== message.id));
+  };
 
   return (
     <>
       {/* Message selection card */}
       <div className="bg-white border border-[#e6e6e6] rounded-lg mb-6 p-6">
         <div className="flex justify-between mb-3">
-          <h2 className="text-[18px] font-medium text-[#241c15]">Compare message performance</h2>
+          <h2 className="text-[18px] font-medium text-[#241c15]">
+            Compare message performance
+          </h2>
         </div>
 
         <div className="text-[13px] text-[#6b6b6b] mb-6">
-          Jun 5, 2025 - Jul 5, 2025 • Compared to last 31 days • <span className="text-[#241c15] font-medium">Includes</span> Apple MPP
+          Jun 5, 2025 - Jul 5, 2025 • Compared to last 31 days •{" "}
+          <span className="text-[#241c15] font-medium">Includes</span> Apple MPP
         </div>
 
         {/* Selected Messages */}
         <div className="mb-6">
-          <h3 className="text-[15px] font-medium mb-3">Selected messages ({selectedMessages.length})</h3>
+          <h3 className="text-[15px] font-medium mb-3">
+            Selected messages ({selectedMessages.length})
+          </h3>
           {selectedMessages.length === 0 ? (
             <div className="border border-dashed border-[#e1e1e1] rounded-lg p-8 text-center">
               <p className="text-[14px] text-[#6b6b6b]">No messages selected</p>
@@ -287,11 +295,18 @@ function MessageComparisonComponent() {
             </div>
           ) : (
             <div className="border border-[#e1e1e1] rounded-lg divide-y">
-              {selectedMessages.map(message => (
-                <div key={message.id} className="flex justify-between items-center p-4">
+              {selectedMessages.map((message) => (
+                <div
+                  key={message.id}
+                  className="flex justify-between items-center p-4"
+                >
                   <div>
-                    <div className="text-[15px] font-medium">{message.name}</div>
-                    <div className="text-[13px] text-[#6b6b6b]">{message.sends.toLocaleString()} sends</div>
+                    <div className="text-[15px] font-medium">
+                      {message.name}
+                    </div>
+                    <div className="text-[13px] text-[#6b6b6b]">
+                      {message.sends.toLocaleString()} sends
+                    </div>
                   </div>
                   <button
                     className="text-[#007c89] hover:underline text-sm"
@@ -310,11 +325,18 @@ function MessageComparisonComponent() {
           <div>
             <h3 className="text-[15px] font-medium mb-3">Available messages</h3>
             <div className="border border-[#e1e1e1] rounded-lg divide-y">
-              {availableMessages.map(message => (
-                <div key={message.id} className="flex justify-between items-center p-4">
+              {availableMessages.map((message) => (
+                <div
+                  key={message.id}
+                  className="flex justify-between items-center p-4"
+                >
                   <div>
-                    <div className="text-[15px] font-medium">{message.name}</div>
-                    <div className="text-[13px] text-[#6b6b6b]">{message.sends.toLocaleString()} sends</div>
+                    <div className="text-[15px] font-medium">
+                      {message.name}
+                    </div>
+                    <div className="text-[13px] text-[#6b6b6b]">
+                      {message.sends.toLocaleString()} sends
+                    </div>
                   </div>
                   <button
                     className="text-[#007c89] hover:underline text-sm"
@@ -332,26 +354,46 @@ function MessageComparisonComponent() {
       {/* Comparison Table */}
       {selectedMessages.length > 0 && (
         <div className="bg-white border border-[#e6e6e6] rounded-lg p-6">
-          <h2 className="text-[18px] font-medium text-[#241c15] mb-5">Performance metrics</h2>
+          <h2 className="text-[18px] font-medium text-[#241c15] mb-5">
+            Performance metrics
+          </h2>
 
           <table className="w-full">
             <thead>
               <tr className="border-b border-[#e1e1e1]">
-                <th className="text-left py-3 font-medium text-[14px] text-[#6b6b6b]">Message name</th>
-                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">Total sends</th>
-                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">Open rate</th>
-                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">Click rate</th>
-                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">Unsubscribe rate</th>
+                <th className="text-left py-3 font-medium text-[14px] text-[#6b6b6b]">
+                  Message name
+                </th>
+                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">
+                  Total sends
+                </th>
+                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">
+                  Open rate
+                </th>
+                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">
+                  Click rate
+                </th>
+                <th className="text-right py-3 font-medium text-[14px] text-[#6b6b6b]">
+                  Unsubscribe rate
+                </th>
               </tr>
             </thead>
             <tbody>
-              {selectedMessages.map(message => (
+              {selectedMessages.map((message) => (
                 <tr key={message.id} className="border-b border-[#e1e1e1]">
                   <td className="py-4 text-[15px]">{message.name}</td>
-                  <td className="py-4 text-right text-[15px]">{message.sends.toLocaleString()}</td>
-                  <td className="py-4 text-right text-[15px]">{message.openRate}</td>
-                  <td className="py-4 text-right text-[15px]">{message.clickRate}</td>
-                  <td className="py-4 text-right text-[15px]">{message.unsubRate}</td>
+                  <td className="py-4 text-right text-[15px]">
+                    {message.sends.toLocaleString()}
+                  </td>
+                  <td className="py-4 text-right text-[15px]">
+                    {message.openRate}
+                  </td>
+                  <td className="py-4 text-right text-[15px]">
+                    {message.clickRate}
+                  </td>
+                  <td className="py-4 text-right text-[15px]">
+                    {message.unsubRate}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -359,6 +401,5 @@ function MessageComparisonComponent() {
         </div>
       )}
     </>
-  )
+  );
 }
-

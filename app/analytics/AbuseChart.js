@@ -7,14 +7,23 @@ const AbuseChart = () => {
 
   const timeFrames = {
     day: [
-      "Jun 05", "Jun 07", "Jun 09", "Jun 11",
-      "Jun 13", "Jun 15", "Jun 17", "Jun 19"
+      "Jun 05",
+      "Jun 07",
+      "Jun 09",
+      "Jun 11",
+      "Jun 13",
+      "Jun 15",
+      "Jun 17",
+      "Jun 19",
     ],
     week: [
-      "Jun 08-Jun 14", "Jun 15-Jun 21",
-      "Jun 22-Jun 28", "Jun 29-Jul 05", "Jul 06-Jul 12"
+      "Jun 08-Jun 14",
+      "Jun 15-Jun 21",
+      "Jun 22-Jun 28",
+      "Jun 29-Jul 05",
+      "Jul 06-Jul 12",
     ],
-    month: ["Jun 2025", "Jul 2025"]
+    month: ["Jun 2025", "Jul 2025"],
   };
 
   const chartDates = timeFrames[selectedTimeFrame];
@@ -30,8 +39,17 @@ const AbuseChart = () => {
               <div className="w-2 h-2 rounded-full bg-[#007c89]" />
             </div>
             <span className="text-[14px] mr-1">Abuse report rate</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" className="w-4 h-4 text-[#6b6b6b] ml-1">
-              <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              className="w-4 h-4 text-[#6b6b6b] ml-1"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clipRule="evenodd"
+              />
             </svg>
           </div>
         </div>
@@ -41,7 +59,11 @@ const AbuseChart = () => {
             <button
               key={frame}
               onClick={() => setSelectedTimeFrame(frame)}
-              className={`px-4 py-1 text-[14px] ${selectedTimeFrame === frame ? 'bg-[#f2f2f2] text-[#241c15] font-medium' : 'bg-white text-[#6b6b6b]'} ${frame !== 'day' && 'border-l border-[#e6e6e6]'}`}
+              className={`px-4 py-1 text-[14px] ${
+                selectedTimeFrame === frame
+                  ? "bg-[#f2f2f2] text-[#241c15] font-medium"
+                  : "bg-white text-[#6b6b6b]"
+              } ${frame !== "day" && "border-l border-[#e6e6e6]"}`}
             >
               {frame.charAt(0).toUpperCase() + frame.slice(1)}
             </button>
@@ -54,22 +76,29 @@ const AbuseChart = () => {
         {/* Y-axis labels and grid */}
         <div className="flex text-[12px] text-[#6b6b6b] justify-between pr-2">
           {["100%", "75%", "50%", "25%", "0%"].map((label, idx) => (
-            <div key={idx} className="h-full flex items-center justify-end">{label}</div>
+            <div key={idx} className="h-full flex items-center justify-end">
+              {label}
+            </div>
           ))}
         </div>
 
         {/* Chart lines and dots */}
         <div className="flex border-l border-b border-[#e6e6e6] h-full items-end relative">
-          <svg className="w-full h-full" viewBox={`0 0 ${chartDates.length * 100} 40`} preserveAspectRatio="none">
-            <line x1="0" y1="20" x2={chartDates.length * 100} y2="20" stroke="#9e67ea" strokeWidth="2" />
+          <svg
+            className="w-full h-full"
+            viewBox={`0 0 ${chartDates.length * 100} 40`}
+            preserveAspectRatio="none"
+          >
+            <line
+              x1="0"
+              y1="20"
+              x2={chartDates.length * 100}
+              y2="20"
+              stroke="#9e67ea"
+              strokeWidth="2"
+            />
             {chartDates.map((_, i) => (
-              <circle
-                key={i}
-                cx={i * 100}
-                cy="20"
-                r="4"
-                fill="#9e67ea"
-              />
+              <circle key={i} cx={i * 100} cy="20" r="4" fill="#9e67ea" />
             ))}
           </svg>
         </div>
@@ -80,7 +109,7 @@ const AbuseChart = () => {
             <div
               key={i}
               className="text-[12px] text-[#6b6b6b]"
-              style={{ transform: 'rotate(-45deg)', transformOrigin: 'left' }}
+              style={{ transform: "rotate(-45deg)", transformOrigin: "left" }}
             >
               {date}
             </div>
@@ -93,14 +122,22 @@ const AbuseChart = () => {
         <div className="text-[13px] text-[#6b6b6b]">0 - 16 of 31</div>
         <div className="flex items-center">
           <button className="flex items-center text-[#007c89] opacity-50 cursor-not-allowed text-[14px]">
-            <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <svg
+              className="w-4 h-4 mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
               <path d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" />
             </svg>
             Previous
           </button>
           <button className="flex items-center text-[#007c89] text-[14px] ml-4">
             Next
-            <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+            <svg
+              className="w-4 h-4 ml-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
               <path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" />
             </svg>
           </button>

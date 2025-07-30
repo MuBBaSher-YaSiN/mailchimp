@@ -9,7 +9,7 @@ export default function PerformanceMetricsComponent() {
       {/* Monitor performance card */}
       <div className="bg-white border border-[#C3CED5] rounded-xl mb-6 p-6">
         <div className="flex gap-3 items-center mb-3">
-          <h2 className="text-[20px] font-medium text-[#21262A]">Monitor performance</h2>
+          <h2 className="text-[20px] font-[550] text-[#21262A]">Monitor performance</h2>
           <button className="text-[#007c89]">
             <GoPencil size={24} />
           </button>
@@ -66,7 +66,7 @@ export default function PerformanceMetricsComponent() {
       {/* Performance over time card */}
       <div className="bg-white border border-[#C3CED5] h-[500px] rounded-xl p-6">
         <div>
-          <h2 className="text-[20px] font-medium text-[#21262A] mb-3">Performance over time</h2>
+          <h2 className="text-[20px] font-[550] text-[#21262A] mb-3">Performance over time</h2>
           <div className="text-[13px] text-[#4C555B] mb-6">
             Jun 5, 2025 - Jul 5, 2025 • Compared to last 31 days
           </div>

@@ -97,7 +97,7 @@ export default function AudiencePage() {
     }, [selectedRows, audienceData.length]);
 
     return (
-        <div className="bg-white p-4">
+        <div className="bg-white px-4 pb-4 pt-1">
             <div className="flex flex-wrap items-center gap-3 mt-16">
                 {/* Segments dropdown */}
                 <div className="relative">
