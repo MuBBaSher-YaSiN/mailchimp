@@ -8,7 +8,7 @@ export default function SignUpFormHero() {
         <div className="w-full bg-[#deeaf7] py-16 md:py-20">
             <div className="max-w-[1248px] mx-auto px-1 text-center">
                 {/* Main heading */}
-                <h1 className="text-[40px] font-medium text-[#21262A] mb-6 max-w-[650px] mx-auto">
+                <h1 className="text-[40px] font-[550] text-[#21262A] mb-4 max-w-[650px] mx-auto">
                     Transform site visitors<br className="hidden md:block" /> into email and SMS subscribers
                 </h1>
 
