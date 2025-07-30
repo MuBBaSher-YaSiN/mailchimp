@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function HelpResourcesSection() {
   return (
     <div className="max-w-[1248px] mx-auto px-4 py-8 ">
-      <h2 className="text-2xl font-medium text-[#241c15] mb-4">Need some help?</h2>
+      <h2 className="heading_text text-[#241c15] mb-4">Need some help?</h2>
       <div className="h-px bg-[#e6e6e6] mb-6"></div>
       
       <div className="flex flex-wrap md:justify-between justify-start    mx-auto ">
@@ -22,8 +22,8 @@ export default function HelpResourcesSection() {
           </div>
           <div className="flex flex-col">
             <span className="text-[#6b6b6b] text-sm mb-1">getting started</span>
-            <h3 className="text-xl font-meduim text-[#21262A] mb-2">About automation flows</h3>
-            <p className="text-[#4a4a4a] text-base">
+            <h3 className="text-xl font-[550] text-[#21262A] mb-1">About automation flows</h3>
+            <p className="text-[#4a4a4a] text-sm mb-3">
               Get started with our automation builder, and create dynamic marketing paths for your contacts.
             </p>
           </div>
@@ -45,8 +45,8 @@ export default function HelpResourcesSection() {
           </div>
           <div className="flex flex-col">
             <span className="text-[#6b6b6b] text-sm mb-1">tutorial</span>
-            <h3 className="text-xl font-medium text-[##21262A] mb-2">Quick start video</h3>
-            <p className="text-[#4a4a4a] text-base">
+            <h3 className="text-xl font-[550] text-[##21262A] mb-1">Quick start video</h3>
+            <p className="text-[#4a4a4a] text-sm mb-3">
               Watch as we guide you through the process of setting up an automation with the flow builder.
             </p>
           </div>
@@ -63,8 +63,8 @@ export default function HelpResourcesSection() {
           </div>
           <div className="flex flex-col">
             <span className="text-[#6b6b6b] text-sm mb-1">step-by-step guide</span>
-            <h3 className="text-xl font-medium text-[#21262A] mb-2">Create an automation flow</h3>
-            <p className="text-[#4a4a4a] text-base">
+            <h3 className="text-xl font-[550] text-[#21262A] mb-1">Create an automation flow</h3>
+            <p className="text-[#4a4a4a] text-sm mb-3">
               Learn how to build automated workflows that deliver personalized experiences for your contacts.
             </p>
           </div>

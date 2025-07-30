@@ -47,7 +47,7 @@ export default function AutomationFlowsComponent() {
         <div className="max-w-[1248px] mx-auto px-6 py-8">
             {/* Header section */}
             <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-medium text-[#241c15]">Browse automation flows by goals</h1>
+                <h1 className="heading_text text-[#241c15]">Browse automation flows by goals</h1>
                 <Link
                     href="/flow-templates"
                     className="text-[#007c89] hover:text-[#004e54] font-medium flex items-center transition-colors"
@@ -64,7 +64,7 @@ export default function AutomationFlowsComponent() {
                         <path d="M8 0L10.1 4.8L15.5 5.6L11.7 9.3L12.5 14.7L8 12.1L3.5 14.7L4.3 9.3L0.5 5.6L5.9 4.8L8 0Z" fill="#FFD74F" />
                     </svg>
                 </div>
-                <p className="text-lg text-[#241c15]">
+                <p className="text-base text-[#241c15]">
                     You are on the Free Plan. Enjoy a preview of Pre-Built Customer Journeys, then{' '}
                     <Link href="/upgrade" className="text-[#007c89] hover:underline font-medium">
                         upgrade
@@ -94,7 +94,7 @@ export default function AutomationFlowsComponent() {
                         {/* Right side - Content */}
                         <div className="flex flex-col py-5 justify-between">
                             <div>
-                                <h3 className="text-lg font-medium text-[#241c15] mb-1">
+                                <h3 className="text-base font-[550] text-[#241c15] mb-1">
                                     {category.title}
                                 </h3>
                                 <p className="text-[14px] text-[#60676c] mb-4">

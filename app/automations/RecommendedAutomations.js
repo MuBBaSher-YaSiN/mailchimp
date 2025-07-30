@@ -5,7 +5,7 @@ import { GiSevenPointedStar } from "react-icons/gi";
 export default function RecommendedAutomations() {
   return (
     <div className="max-w-[1248px] mx-auto px-6 py-8">
-      <h2 className="text-[24px] font-medium text-[#21262A] mb-4">
+      <h2 className="heading_text text-[#21262A] mb-4">
         Try these recommended flows
       </h2>
       <p className="text-[16px] text-[#4C555B] mb-8">
@@ -30,7 +30,7 @@ export default function RecommendedAutomations() {
             </div>
           </div>
           
-          <h3 className="text-[16px] font-medium text-[#21262A]">
+          <h3 className="text-[16px] font-[550] text-[#21262A]">
             Welcome new contacts
           </h3>
           <p className="text-[14px] text-[#21262A]">
@@ -61,7 +61,7 @@ export default function RecommendedAutomations() {
             </div>
           </div>
           
-          <h3 className="text-[16px] font-medium text-[#21262A]">
+          <h3 className="text-[16px] font-[550] text-[#21262A]">
             Share exclusive content with new leads
           </h3>
           <p className="text-[14px] text-[#21262A]">
@@ -80,7 +80,7 @@ export default function RecommendedAutomations() {
             </div>
           </div>
           
-          <h3 className="text-[16px] font-medium text-[#21262A]">
+          <h3 className="text-[16px] font-[550] text-[#21262A]">
             Celebrate sign-up anniversaries with your contacts
           </h3>
           <p className="text-[14px] text-[#21262A]">

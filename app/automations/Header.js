@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 h-20 px-8 md:px-10 bg-white z-1 border-b border-[#e6e6e6] flex items-center justify-between">
       {/* Left side - Home title */}
-      <h1 className="heading_text font-semibold">Automations flows</h1>
+      <h1 className="heading_text">Automations flows</h1>
       
       {/* Right side - Actions */}
       <div className="flex items-center gap-3">

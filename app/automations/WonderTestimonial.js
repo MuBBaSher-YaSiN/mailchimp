@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function WonderTestimonial() {
     return (
-        <section className="max-w-[1056px] mx-auto px-6 lg:px-2 py-20 lg:my-8">
+        <section className="max-w-[1056px] mx-auto px-6 lg:px-2 pt-20 lg:my-8">
             <div className="flex flex-col lg:flex-row items-center md:items-start gap-1 md:gap-10">
                 {/* Left Column - Text Content */}
                 <div className="lg:max-w-[50%] flex-1 ">
@@ -14,15 +14,15 @@ export default function WonderTestimonial() {
                         <img
                             src="https://cdn-images.mailchimp.com/automations/prebuilt-journeys/wonder_logo.svg"
                             alt="Wonder Logo"
-                            className="h-10 w-auto"
+                            className="h-11 max-w-[190px]"
                         />
                     </div>
 
                     {/* Testimonial Content */}
                     <div>
-                        <p className="text-[#676767] text-sm my-1">From our customers</p>
+                        <p className="text-[#676767] text-base mt-2 mb-1">From our customers</p>
 
-                        <h2 className="font-[500] text-[32px] text-[#21262A] ">
+                        <h2 className="font-[550] text-3xl lg:text-4xl text-[#21262A] ">
                             One of the biggest victories for us is based on one of the flows. We had attendance of our special events increase by 32%.
                         </h2>
 
