@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+
+
+
+
+/* 
+*{
+  font-family:  "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+/* *{
+  font-family:  "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+} */
+
+
+/* .loader {
+  width: 25px;
+  height: 25px;
+  border: 4px solid #267c89;
+  border-top: 6px solid white;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.normal_text{
+  color: #21262A;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.heading_text{
+  color: #21262A;
+  font-size: 24px;
+  font-weight: 500;
+}  */
+
+
+
+
+
+/* ----------------- Load Graphik Family Fonts ----------------- */
+/* @font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik_Family/Graphik-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik_Family/Graphik-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+} */
+
+
+
+
+/* @font-face {
+  font-family: 'Graphik Compact';
+  src: url('/public/Graphik_Collection/Graphik Compact Family/GraphikCompact-MediumItalic-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+} */
+/* ----------------- Global Reset ----------------- */
+* {
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+
+/* ----------------- Loader Animation ----------------- */
+.loader {
+  width: 25px;
+  height: 25px;
+  border: 4px solid #267c89;
+  border-top: 6px solid white;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ----------------- Text Styles ----------------- */
+.normal_text {
+  color: #21262A;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.heading_text {
+  color: #21262A;
+  font-size: 24px;
+  font-weight: 500;
+}  
