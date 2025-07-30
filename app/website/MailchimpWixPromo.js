@@ -109,16 +109,13 @@
 //                         />
 //                     </div>
 
-
 //                     {/* <div className="absolute w-full h-full top-0 left-0 pointer-events-none" aria-hidden="true">
 //                         p-[45%] right-[40%] w-[100px] border-t border-dashed border-[#999]" />
 //                         <div className="hidden md:block absolute top-[85%] right-[20%] w-[60px] border-t border-dashed border-[#999]" />
 
-
 //                         <div className="hidden md:flex items-center justify-center absolute bottom-4 right-4 w-16 h-16 bg-black rounded-full">
 //                             <span className="text-white text-lg font-bold">WIX</span>
 //                         </div>
-
 
 //                         <div className="hidden md:flex items-center justify-center absolute top-[25%] right-[10%] w-16 h-16 bg-[#ffe01b] rounded-full">
 //                             <svg width="32" height="32" viewBox="0 0 32 32" fill="#000">
@@ -132,138 +129,168 @@
 //     );
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function MailchimpWixPromo() {
-    const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
-    return (
-        <div className="w-full max-w-[1248px] mx-auto px-6 py-2">
-            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16">
-                {/* Left content */}
-                <div className="w-full lg:w-1/2">
-                    {/* Logo */}
-                    <div className="mb-8">
-                        <div className="h-8">
-                              <img src="https://www.svgrepo.com/show/362237/monkey.svg" width={50} height={16} />
-                        </div>
-                    </div>
-
-                    {/* Heading */}
-                    <h2 className="text-[34px] font-medium text-[#21262A] mb-4 leading-tight">
-                        Elevate your Business with a Wix Website
-                    </h2>
-
-                    {/* Subheading */}
-                    <p className="text-[16px] text-[#21262A] mb-8">
-                        We've partnered with Wix – an intuitive website builder that helps you build your business presence online
-                    </p>
-
-                    {/* Why use section */}
-                    <h3 className="text-xl font-medium text-[#21262A] mb-5">
-                        Why use Wix with Mailchimp?
-                    </h3>
-
-                    {/* Benefits list */}
-                    <ul className="space-y-4 mb-10">
-                        <li className="flex items-start">
-                            <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                                    <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
-                                </svg>
-                            </span>
-                            <span className="text-[16px] text-[#21262A]">Launch a professional website in minutes</span>
-                        </li>
-
-                        <li className="flex items-start">
-                            <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                                    <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
-                                </svg>
-                            </span>
-                            <span className="text-[16px] text-[#21262A]">Grow your audience by automatically syncing your subscribers, leads, and customers</span>
-                        </li>
-
-                        <li className="flex items-start">
-                            <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                                    <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
-                                </svg>
-                            </span>
-                            <span className="text-[16px] text-[#21262A]">Automate your email and SMS campaigns based on website behavior*</span>
-                        </li>
-
-                        <li className="flex items-start">
-                            <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                                    <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
-                                </svg>
-                            </span>
-                            <span className="text-[16px] text-[#21262A]">Choose from 900+ pre-designed templates or use the AI website builder</span>
-                        </li>
-
-                        <li className="flex items-start">
-                            <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                                    <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
-                                </svg>
-                            </span>
-                            <span className="text-[16px] text-[#21262A]">Step by step help from a dedicated Wix support team</span>
-                        </li>
-                    </ul>
-
-                    {/* Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="bg-[#277e89] hover:bg-[#1b5a62] text-white px-3 py-1 rounded transition-colors text-[14px] font-medium">
-                            Get started for free
-                        </button>
-                        <button className="bg-[#E2E9ED] hover:bg-[#e5e5e5] text-[#241c15] px-3 py-1 rounded transition-colors text-[14px] font-medium">
-                            Connect existing Wix site
-                        </button>
-                    </div>
-                </div>
-
-                {/* Right image */}
-                <div className="w-full lg:w-1/2 relative hidden lg:flex">
-                    <div className={`transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="relative">
-                            {/* Main image */}
-                            <img
-                                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/wix-and-mailchimp.png"
-                                alt="Wix website with Mailchimp integration"
-                                width={600}
-                                height={500}
-                                className="w-full h-auto"
-                            />
-
-                            {/* Decorative elements */}
-                            
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="w-full max-w-[1248px] mx-auto px-6 py-2">
+      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16">
+        {/* Left content */}
+        <div className="w-full lg:w-1/2">
+          {/* Logo */}
+          <div className="mb-8">
+            <div className="h-8">
+              <img
+                src="https://www.svgrepo.com/show/362237/monkey.svg"
+                width={50}
+                height={16}
+              />
             </div>
+          </div>
+
+          {/* Heading */}
+          <h2 className="text-[34px] font-[550] text-[#21262A] mb-4 leading-tight">
+            Elevate your Business with a Wix Website
+          </h2>
+
+          {/* Subheading */}
+          <p className="text-[16px] text-[#21262A] mb-8">
+            We've partnered with Wix – an intuitive website builder that helps
+            you build your business presence online
+          </p>
+
+          {/* Why use section */}
+          <h3 className="text-xl font-[550] text-[#21262A] mb-5">
+            Why use Wix with Mailchimp?
+          </h3>
+
+          {/* Benefits list */}
+          <ul className="space-y-4 mb-10">
+            <li className="flex items-start">
+              <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                >
+                  <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
+                </svg>
+              </span>
+              <span className="text-[16px] text-[#21262A]">
+                Launch a professional website in minutes
+              </span>
+            </li>
+
+            <li className="flex items-start">
+              <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                >
+                  <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
+                </svg>
+              </span>
+              <span className="text-[16px] text-[#21262A]">
+                Grow your audience by automatically syncing your subscribers,
+                leads, and customers
+              </span>
+            </li>
+
+            <li className="flex items-start">
+              <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                >
+                  <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
+                </svg>
+              </span>
+              <span className="text-[16px] text-[#21262A]">
+                Automate your email and SMS campaigns based on website behavior*
+              </span>
+            </li>
+
+            <li className="flex items-start">
+              <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                >
+                  <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
+                </svg>
+              </span>
+              <span className="text-[16px] text-[#21262A]">
+                Choose from 900+ pre-designed templates or use the AI website
+                builder
+              </span>
+            </li>
+
+            <li className="flex items-start">
+              <span className="text-[#277e89] mr-3 mt-0.5 flex-shrink-0">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                >
+                  <path d="M6.75 12.127L3.622 9L2.558 10.057L6.75 14.25L15.75 5.25L14.693 4.193L6.75 12.127Z" />
+                </svg>
+              </span>
+              <span className="text-[16px] text-[#21262A]">
+                Step by step help from a dedicated Wix support team
+              </span>
+            </li>
+          </ul>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="bg-[#277e89] hover:bg-[#1b5a62] text-white px-3 py-1 rounded transition-colors text-[14px] font-medium">
+              Get started for free
+            </button>
+            <button className="bg-[#E2E9ED] hover:bg-[#e5e5e5] text-[#241c15] px-3 py-1 rounded transition-colors text-[14px] font-medium">
+              Connect existing Wix site
+            </button>
+          </div>
         </div>
-    );
+
+        {/* Right image */}
+        <div className="w-full lg:w-1/2 relative hidden lg:flex">
+          <div
+            className={`transition-opacity duration-500 ${
+              isLoaded ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div className="relative">
+              {/* Main image */}
+              <img
+                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/wix-and-mailchimp.png"
+                alt="Wix website with Mailchimp integration"
+                width={600}
+                height={500}
+                className="w-full h-auto"
+              />
+
+              {/* Decorative elements */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-
-
