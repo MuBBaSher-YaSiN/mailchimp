@@ -29,63 +29,63 @@ export default function ListViewTab() {
       {/* Filters */}
       <div className="flex flex-wrap items-center justify-between mb-6 gap-3">
         <div className="flex items-center gap-4 flex-wrap">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center ">
             <span className="text-sm text-[#4C555B]">Type:</span>
             <div className="relative">
-              <select className="appearance-none text-[#017E89] pr-8 pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none text-[#017E89] pr-7 pl-2 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <svg className="w-4 h-6" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center ">
             <span className="text-sm text-[#4C555B]">Status:</span>
             <div className="relative">
-              <select className="appearance-none pr-8 text-[#017E89] pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none text-[#017E89] pr-7 pl-2 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <svg className="w-4 h-6" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <span className="text-sm text-[#4C555B]">Folder:</span>
             <div className="relative">
-              <select className="appearance-none pr-8 text-[#017E89] pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none text-[#017E89] pr-7 pl-2 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <svg className="w-4 h-6" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center ">
             <span className="text-sm text-[#4C555B]">Date:</span>
             <div className="relative">
-              <select className="appearance-none text-[#017E89] pr-8 pl-3 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
+              <select className="appearance-none text-[#017E89] pr-7 pl-2 py-1 rounded text-sm bg-white focus:outline-none focus:ring-1 focus:ring-[#007c89]">
                 <option>All</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <svg className="w-4 h-6" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </div>
             </div>
           </div>
 
-          <button className="text-sm">Clear</button>
+          <button className="text-sm text-gray-100">Clear</button>
         </div>
 
         <div className="flex items-center gap-2">
@@ -128,9 +128,9 @@ export default function ListViewTab() {
               <td className="py-4 pr-3">
                 <input type="checkbox" className="h-4 w-4 text-[#007c89] rounded border-gray-300 focus:ring-[#007c89]" />
               </td>
-              <td className="py-4 px-3 xl:w-[416px]">
+              <td className="py-4 px-3 xl:w-[416px] flex flex-col gap-1">
                 <div className="mb-1">
-                  <a href="#" className="font-medium text-[#007c89] font-medium hover:underline">Health Insurance</a>
+                  <a href="#" className="font-semibold text-[#007c89]  hover:underline">Health Insurance</a>
                 </div>
                 <div className="flex items-center text-sm text-[#21262A]">
                   <svg className="w-4 h-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -142,15 +142,19 @@ export default function ListViewTab() {
                 <div className="text-[14px] font-[400] text-[#4C555B] mt-1">
                   Last edited Sat, Jun 28, 02:14 PM by Marketing OS
                 </div>
+                <span className=" items-center px-2.5 py-0.5 my-3 w-fit rounded-md text-xs font-medium bg-[#e2e9ed] text-gray-800">
+                  Draft
+                </span>
+                <a href="#" className="text-[#007c89] w-fit font-medium border-b-2 border-dashed text-xs">ORACLESOL</a>
               </td>
-              <td className="py-4 px-3">
+              {/* <td className="py-4 px-3">
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-[#e2e9ed] text-gray-800">
                   Draft
                 </span>
-              </td>
-              <td className="py-4 px-3">
+              </td> */}
+              {/* <td className="py-4 px-3">
                 <a href="#" className="text-[#007c89] border-b-2 border-dashed text-xs">ORACLESOL</a>
-              </td>
+              </td> */}
               <td className="py-4 px-3">
                 {/* Empty Analytics column */}
               </td>
@@ -160,12 +164,12 @@ export default function ListViewTab() {
                     <button className="text-[#21262A] px-3  hover:text-[#005d66] text-sm font-medium">Edit</button>
                     <div className="relative border-l border-zinc-200 ml-2">
                       <button className="text-gray-400 pt-1 pl-1.5 hover:text-gray-600">
-                        {/* <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                        <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                      </svg> */}
-                        <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      </svg>
+                        {/* <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
-                        </svg>
+                        </svg> */}
 
                       </button>
                     </div>

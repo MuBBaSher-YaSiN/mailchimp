@@ -11,24 +11,13 @@ export default function CampaignPage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Header */}
-            {/* <div className="px-6 sticky top-8 z-1 bg-white py-4 border-b border-gray-200 flex justify-between items-center">
-                <h1 className="text-[22px] font-medium text-[#241c15]">All campaigns</h1>
-                <div className="flex items-center gap-3">
-                    <button className="px-4 py-2 text-sm text-[#007c89] border border-[#007c89] rounded hover:bg-[#f0fafb] transition-colors">
-                        View analytics
-                    </button>
-                    <button className="px-4 py-2 text-sm text-white bg-[#007c89] rounded hover:bg-[#005d66] transition-colors">
-                        Create
-                    </button>
-                </div>
-            </div> */}
-
+          
             {/* Tabs */}
             <div className="border-b border-gray-200">
                 <div className="px-6">
                     <div className="flex">
                         <button
-                            className={`flex items-center py-3 px-4 relative ${activeTab === 'list' ? 'text-[#007c89]' : 'text-gray-600'}`}
+                            className={`flex items-center py-3 px-4 relative ${activeTab === 'list' ? 'text-[#007c89]' : 'text-[#21262a]'}`}
                             onClick={() => setActiveTab('list')}
                         >
                             <svg className="w-4 h-4 mr-2" viewBox="0 0 16 16" fill="currentColor">

@@ -75,17 +75,17 @@ export default function WelcomeAutomationBanner() {
             <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                 {/* Left column - Text content */}
                 <div className="max-w-[600px]">
-                    <h1 className="text-[40px] md:text-[34px] font-mediumn text-[#21262A]">
+                    <h2 className="text-[28px] md:text-[34px] font-[550] text-[#21262A]">
                         Welcome new customers—even when you&apos;re offline
-                    </h1>
-                    <p className="text-[18px] text-[#4a4a4a]">
+                    </h2>
+                    <p className="text-[16px] text-[#4a4a4a] my-4">
                         Automate welcome emails to make a great first impression with new customers.
                     </p>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-1">
-                        <button className="bg-[#007c89] hover:bg-[#004e54] text-white px-4 py-1 rounded-lg transition-colors font-medium">
+                        <button className="bg-[#007c89] text-[14px] hover:bg-[#004e54] text-white px-4 py-1 rounded-lg transition-colors font-medium">
                             Get started
                         </button>
-                        <button className="flex items-center text-[#007c89] hover:text-[#004e54] transition-colors font-medium">
+                        <button className="flex items-center text-[14px] text-[#007c89] hover:text-[#004e54] transition-colors font-medium">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M9.5 9C9.5 9 11 7.5 12 9.5C13 11.5 14.5 10 14.5 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
