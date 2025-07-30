@@ -459,7 +459,7 @@ function Navbar() {
 
                 {/* Search Bar */}
                 <div
-                    className="hidden  md:flex w-200px lg:w-[483px] 2xl:w-[636px] border rounded-md border-zinc-300 items-center hover:border-black h-9 mt-1 py-4 px-2 focus-within:border-yellow-400 focus-within:border-2 ml-4 transition cursor-pointer"
+                    className="hidden  md:flex w-[400px] lg:w-[483px] 2xl:w-[636px] border rounded-md border-zinc-300 items-center hover:border-black h-9 mt-1 py-4 px-2 focus-within:border-yellow-400 focus-within:border-2 ml-4 transition cursor-pointer"
                     onClick={() => setSearchActive(true)}
                 >
                     <IoMdSearch size={22} className="text-[#21262A] mr-2" />
@@ -472,7 +472,7 @@ function Navbar() {
                         className='md:hidden'
                         onClick={() => setSearchActive(true)}
                     >
-                        <IoMdSearch size={22} className='text-gray-500' />
+                        <IoMdSearch size={22} className='mr-2 text-gray-500' />
                     </button>
                     <div className="relative flex items-center gap-4">
                         <button
